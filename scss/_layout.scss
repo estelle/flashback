@@ -1,0 +1,23 @@
+:root {
+  font-size: 162.5%;
+  background: $background;
+  color: $color;
+}
+body {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+body,
+#presentation, 
+.slides {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0;
+  bottom: 0;
+}
+#presentation {
+  display: block;
+  overflow: hidden;
+}

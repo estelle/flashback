@@ -1,0 +1,13 @@
+.slide.past,
+.slide.current,
+.slide.future {
+  visibility: visible;
+  display: block;
+  margin-left: -100%;
+}
+.slide.current {
+  margin-left: 0;
+}
+.slide.future {
+  margin-left: 100%;
+}

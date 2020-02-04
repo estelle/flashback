@@ -1,0 +1,527 @@
+/*
+	Mac CTO CSS
+	================================================
+*/
+
+/* 28410957, 28832432 */
+@media only screen and (max-width: 736px) and (max-device-width:768px) {
+    /* START 28894985 */
+    .toolkit-button:focus {
+        box-shadow: none;
+    }
+    /* END 28894985 */
+}
+
+@media only screen and (max-device-width: 320px) {
+    .as-promo-img {
+        padding-right: 12px;
+    }
+}
+
+.cn .cto-macbook-air .as-configuration-maintitle {
+    padding-right: 115px;
+}
+
+.cz .as-optiontile-hardware .as-optiontile-alttext,
+.no .as-optiontile-hardware .as-optiontile-alttext,
+.de .as-optiontile-hardware .as-optiontile-alttext,
+.cn .as-optiontile-hardware .as-optiontile-alttext,
+.jp .as-optiontile-hardware .as-optiontile-alttext {
+    width: 48%;
+}
+
+.cn .cto-macbook-air .as-optiontile-hardware .as-optiontile-alttext {
+    width: 47%;
+}
+
+.cz .as-optiontile-pricedelta,
+.no .as-optiontile-pricedelta,
+.de .as-optiontile-pricedelta,
+.cn .as-optiontile-pricedelta,
+.jp .as-optiontile-pricedelta {
+    width: 40%;
+}
+
+.cz .as-configuration-category.as-configuration-categorypresoftware .as-optiontile-alttext,
+.no .as-configuration-category.as-configuration-categorypresoftware .as-optiontile-alttext,
+.de .as-configuration-category.as-configuration-categorypresoftware .as-optiontile-alttext,
+.cn .as-configuration-category.as-configuration-categorypresoftware .as-optiontile-alttext,
+.jp .as-configuration-category.as-configuration-categorypresoftware .as-optiontile-alttext {
+    width: auto;
+}
+
+.as-optionselector-options {
+    margin-left: 0;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+    .ru .as-optiontile-hardware .as-optiontile-alttext {
+        width: 52%
+    }
+}
+
+/* END 28410957, 28832432 */
+
+/* START 28833588 */
+@media only screen and (max-width: 736px) and (max-device-width:768px) {
+    .as-overlay-info .as-overlay-languages-box {
+        padding: 22px 15px;
+    }
+}
+/* END 28833588 */
+
+/* START 28851422 */
+html.oldie.cn .as-actiontray .as-actiontray-chatonline {
+    max-width: 140px;
+}
+/* END 28851422 */
+
+.cto-macbook-pro .as-fullscreengallery .ase-gallery {
+    background: #f2f2f2;
+}
+
+.ac-gn-segmentbar-visible .cto-macbook-pro .as-fullscreengallery .ase-overlay {
+    margin-top: -40px;
+}
+
+@media only screen and (max-width:736px) and (max-device-width:768px) {
+    .ac-gn-segmentbar-visible .cto-macbook-pro .as-fullscreengallery .ase-overlay {
+        margin-top: -44px;
+    }
+}
+
+.as-fullscreengallery .as-overlay-close {
+    left: 28px;
+}
+
+@media only screen and (max-width:736px) and (max-device-width:768px) {
+    .as-fullscreengallery .as-overlay-close {
+        left: 7.14286vw;
+    }
+}
+
+/* loan disclaimer 28142100  START */
+.cto-mac .stack-item.as-configuration-loandisclaimer {
+    background-color: #f2f2f2;
+    color: #999;
+    padding-top: 16px;
+}
+
+.cn .cto-mac .stack-item.as-configuration-loandisclaimer,
+.xf .cto-mac .stack-item.as-configuration-loandisclaimer {
+    padding-bottom: 11px;
+}
+
+.cto-mac .stack-item.as-configuration-loandisclaimer div.footnotes{
+    font-size: 11px;
+}
+
+.cto-mac .as-configuration-loandisclaimer +.footer-wrapper .as-footnotes-sosumi {
+    padding-top: 0;
+}
+
+/* loan disclaimer 28142100 END */
+
+/* 29335093 */
+.cn overlay[data-uid^="keyboard"] .as-configuration-learnmorecontent .as-overlay-infoicon {
+  width: 100%;
+  height: 100%;
+}
+/* 29335093 */
+
+@media only screen and (max-device-width: 320px) and (orientation: portrait) {
+    .mx .as-actiontray .price-info>.add-to-cart,
+    .jp .as-actiontray .price-info>.add-to-cart,
+    .br .as-actiontray .price-info>.add-to-cart,
+    .dk .as-actiontray .price-info>.add-to-cart {
+        padding: 0;
+    }
+
+    .mx .as-actiontray .price,
+    .jp .as-actiontray .price,
+    .br .as-actiontray .price,
+    .dk .as-actiontray .price {
+        padding-bottom: 3px;
+    }
+
+    .mx .as-actiontray.open .price-info > .add-to-cart,
+    .jp .as-actiontray.open .price-info > .add-to-cart,
+    .br .as-actiontray.open .price-info > .add-to-cart,
+    .dk .as-actiontray.open .price-info > .add-to-cart {
+        padding-bottom: 24px;
+    }
+
+    .dk .as-actiontray .purchase-info .moreless:after {
+        padding-left: 0px;
+    }
+
+    .dk .as-optiontile-pricedelta {
+        width: 35%;
+    }
+}
+
+@media only screen and (max-device-width: 375px) and (orientation: portrait) {
+    .ru .as-actiontray .price-info>.add-to-cart {
+        padding: 0;
+    }
+
+    .ru .as-actiontray .price {
+        padding-bottom: 3px;
+    }
+
+    .ru .as-actiontray.open .price-info > .add-to-cart {
+        padding-bottom: 24px;
+    }
+}
+
+.as-imagelist-container {
+    width: 100%;
+}
+
+.as-imagelist-container .as-imagelist-title,
+.as-imagelist-container .as-imagelist {
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (max-width: 1023px) and (max-device-width: 736px) {
+    .as-imagelist-container .as-imagelist-title,
+    .as-imagelist-container .as-imagelist {
+        width: 100%;
+    }
+    .as-imagelist-container .as-imagelist-label {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.en-th .as-actiontray .financing a.more {
+    padding: 0;
+}
+
+.en-th .as-actiontray .financing a.more:after {
+    padding-left: 0.1em;
+}
+
+.dk .as-actiontray .current_price,
+.as-actiontray .current_price:lang(ja) {
+    font-size: 28px;
+}
+
+@media only screen and (max-device-width: 320px) and (orientation: portrait) {
+    .br .as-optiontile-pricedelta {
+        width: 33%;
+    }
+
+    .hu .as-optiontile-pricedelta {
+        width: 30%;
+    }
+
+    .dk .as-actiontray .current_price,
+    .as-actiontray .current_price:lang(ja) {
+        font-size: 24px;
+    }
+}
+
+.as-overlay-info .footnotes + .footnotes {
+    margin-top: 10px;
+}
+
+overlay[data-uid="imac_pro_vesa_mount-learn_more_content"] .as-configuration-learnmorecontent .as-overlay-productimage {
+    margin: 24px auto 22px;
+}
+
+.as-configuration-learnmorecontent .as-overlay-mainheading {
+    text-align: center;
+}
+
+@media only screen and (max-width: 1023px) and (max-device-width: 736px) {
+    overlay[data-uid="imac_pro_vesa_mount-learn_more_content"] .as-configuration-learnmorecontent .as-overlay-productimage {
+        margin: 11px auto 29px;
+    }
+
+    .as-configuration-learnmorecontent .as-overlay-productimage {
+        margin: 29px auto 7px;
+    }
+
+    .as-configuration-learnmorecontent>h3 {
+        padding-top: 24px;
+    }
+
+    .as-overlay-info .as-configuration-learnmorecontent .footnotes {
+        margin-top: 28px;
+    }
+
+    .as-overlay-info .footnotes + .footnotes {
+        margin-top: 19px;
+    }
+}
+
+.xf .as-configuration-loandisclaimer .stack-item-body {
+    border-bottom: 1px solid #d6d6d6;
+    padding-bottom: 10px;
+}
+
+.cto-mac-mini .as-configuration-heroimage img {
+    cursor: default;
+}
+
+.cto-macbook-pro .as-configurations-viewgallery {
+    width: 100%;
+    max-width: 490px;
+}
+
+@media only screen and (max-device-width: 736px) and (max-width: 1023px) {
+    .cto-macbook-pro .form-choiceselectorlabel-twocolleft {
+        padding-right: 30px;
+    }
+
+    .cto-macbook-pro .as-configurations-viewgallery {
+        max-width: none;
+    }
+}
+
+.cto-macbook-pro .as-footnotes .as-footnotes-sosumi ol {
+    padding: 0;
+    list-style-position: inside;
+}
+
+/* fixing https://cst.apple.com/tkt.do?tkt=INC071237189 */
+.rr-overlay-open {
+    position: relative;
+    z-index: -1;
+}
+
+.rr-overlay-open-ios {
+    position: fixed;
+}
+
+/* fix for countries without tradeup */
+.ca .cto-mac .as-configuration-tradeup,
+.br .cto-mac .as-configuration-tradeup,
+.xf .cto-mac .as-configuration-tradeup,
+.jp .cto-mac .as-configuration-tradeup,
+.ru .cto-mac .as-configuration-tradeup {
+    min-height: 0;
+}
+
+@media only screen and (max-width: 736px) and (max-device-width: 768px) {
+    .as-actiontray .moreless {
+        width: 60%;
+    }
+}
+
+.as-actiontray:not(.as-buyflow-messages-hidedefaultfinancing) .as-buyflow-messagelinkcontainer {
+    display: none
+}
+
+@media only screen and (max-width: 736px) and (max-device-width: 768px) {
+    .slide-toggle.as-buyflow-messages-hidedefaultfinancing .financing {
+        display: none;
+    }
+}
+
+
+/* localnav overrides */
+.localnav-standard .localnav-title {
+    margin: 4px 0 8px;
+}
+
+.localnav-standard .localnav-links {
+    margin: 0 0 15px;
+}
+
+@media only screen and (max-width: 1023px) and (max-device-width: 736px) {
+    .localnav-standard .localnav-links {
+        margin: 0 48px;
+    }
+
+    .localnav-standard .localnav-title {
+        padding: 12px 16px 5px;
+        margin: 0;
+    }
+
+    .localnav-wrapper:after {
+        top: 48px;
+    }
+
+    .localnav-standard .localnav-persistent .disclosure-icon-small {
+        top: 6px;
+    }
+}
+
+.localnav-title,
+.localnav-title > .as-chiclets-wrap,
+.localnav-title > .as-chiclets-wrap .as-chiclets-text {
+    font-size: 21px;
+    line-height: 1.14286;
+    font-weight: 600;
+    letter-spacing: 0.011em;
+    font-family: "SF Pro Display", "SF Pro Icons", "AOS Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif; 
+}
+  
+.localnav-title:lang(th),
+.localnav-title > .as-chiclets-wrap:lang(th),
+.localnav-title > .as-chiclets-wrap .as-chiclets-text:lang(th) {
+    letter-spacing: 0em;
+    font-family: "SF Pro TH", "SF Pro Display", "SF Pro Icons", "AOS Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif; 
+}
+ 
+.localnav-title:lang(ar),
+.localnav-title > .as-chiclets-wrap:lang(ar),
+.localnav-title > .as-chiclets-wrap .as-chiclets-text:lang(ar) {
+    font-family: "SF Pro AR", "SF Pro Gulf", "SF Pro Display", "SF Pro Icons", "AOS Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif; 
+}
+
+.localnav-title:lang(ja),
+.localnav-title > .as-chiclets-wrap:lang(ja),
+.localnav-title > .as-chiclets-wrap .as-chiclets-text:lang(ja) {
+    font-family: "SF Pro JP", "SF Pro Display", "SF Pro Icons", "AOS Icons", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Helvetica Neue", "Helvetica", "Arial", sans-serif; 
+}
+  
+.localnav-title:lang(ko),
+.localnav-title > .as-chiclets-wrap:lang(ko),
+.localnav-title > .as-chiclets-wrap .as-chiclets-text:lang(ko) {
+    font-family: "SF Pro KR", "SF Pro Display", "SF Pro Icons", "AOS Icons", "Apple Gothic", "HY Gulim", "MalgunGothic", "HY Dotum", "Lexi Gulim", "Helvetica Neue", "Helvetica", "Arial", sans-serif; 
+}
+
+.localnav-title:lang(zh-CN),
+.localnav-title > .as-chiclets-wrap:lang(zh-CN),
+.localnav-title > .as-chiclets-wrap .as-chiclets-text:lang(zh-CN) {
+    font-family: "SF Pro SC", "SF Pro Display", "SF Pro Icons", "AOS Icons", "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", sans-serif; 
+}
+
+.localnav-title:lang(zh-HK),
+.localnav-title > .as-chiclets-wrap:lang(zh-HK),
+.localnav-title > .as-chiclets-wrap .as-chiclets-text:lang(zh-HK) {
+    font-family: "SF Pro HK", "SF Pro Display", "SF Pro Icons", "AOS Icons", "PingFang HK", "Helvetica Neue", "Helvetica", "Arial", sans-serif; 
+}
+
+.localnav-title:lang(zh-MO),
+.localnav-title > .as-chiclets-wrap:lang(zh-MO),
+.localnav-title > .as-chiclets-wrap .as-chiclets-text:lang(zh-MO) {
+    font-family: "SF Pro HK", "SF Pro TC", "SF Pro Display", "SF Pro Icons", "AOS Icons", "PingFang HK", "Helvetica Neue", "Helvetica", "Arial", sans-serif; 
+}
+
+.localnav-title:lang(zh-TW),
+.localnav-title > .as-chiclets-wrap:lang(zh-TW),
+.localnav-title > .as-chiclets-wrap .as-chiclets-text:lang(zh-TW) {
+    font-family: "SF Pro TC", "SF Pro Display", "SF Pro Icons", "AOS Icons", "PingFang TC", "Helvetica Neue", "Helvetica", "Arial", sans-serif; 
+}
+  
+@media only screen and (max-width: 1023px) and (max-device-width: 736px) {
+    .localnav-title,
+    .localnav-title > .as-chiclets-wrap,
+    .localnav-title > .as-chiclets-wrap .as-chiclets-text {
+        font-size: 19px;
+        line-height: 1.26316;
+        font-weight: 600;
+        letter-spacing: 0.012em;
+        font-family: "SF Pro Display", "SF Pro Icons", "AOS Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif; 
+    }
+  
+    .localnav-title:lang(th),
+    .localnav-title > .as-chiclets-wrap:lang(th),
+    .localnav-title > .as-chiclets-wrap .as-chiclets-text:lang(th) {
+        letter-spacing: 0em;
+        font-family: "SF Pro TH", "SF Pro Display", "SF Pro Icons", "AOS Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif; 
+    }
+  
+    .localnav-title:lang(ar),
+    .localnav-title > .as-chiclets-wrap:lang(ar),
+    .localnav-title > .as-chiclets-wrap .as-chiclets-text:lang(ar) {
+        font-family: "SF Pro AR", "SF Pro Gulf", "SF Pro Display", "SF Pro Icons", "AOS Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif; 
+    }
+  
+    .localnav-title:lang(ja),
+    .localnav-title > .as-chiclets-wrap:lang(ja),
+    .localnav-title > .as-chiclets-wrap .as-chiclets-text:lang(ja) {
+        font-family: "SF Pro JP", "SF Pro Display", "SF Pro Icons", "AOS Icons", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Helvetica Neue", "Helvetica", "Arial", sans-serif; 
+    }
+  
+    .localnav-title:lang(ko),
+    .localnav-title > .as-chiclets-wrap:lang(ko),
+    .localnav-title > .as-chiclets-wrap .as-chiclets-text:lang(ko) {
+        font-family: "SF Pro KR", "SF Pro Display", "SF Pro Icons", "AOS Icons", "Apple Gothic", "HY Gulim", "MalgunGothic", "HY Dotum", "Lexi Gulim", "Helvetica Neue", "Helvetica", "Arial", sans-serif; 
+    }
+  
+    .localnav-title:lang(zh-CN),
+    .localnav-title > .as-chiclets-wrap:lang(zh-CN),
+    .localnav-title > .as-chiclets-wrap .as-chiclets-text:lang(zh-CN) {
+        font-family: "SF Pro SC", "SF Pro Display", "SF Pro Icons", "AOS Icons", "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", sans-serif; 
+    }
+  
+    .localnav-title:lang(zh-HK),
+    .localnav-title > .as-chiclets-wrap:lang(zh-HK),
+    .localnav-title > .as-chiclets-wrap .as-chiclets-text:lang(zh-HK) {
+        font-family: "SF Pro HK", "SF Pro Display", "SF Pro Icons", "AOS Icons", "PingFang HK", "Helvetica Neue", "Helvetica", "Arial", sans-serif; 
+    }
+  
+    .localnav-title:lang(zh-MO),
+    .localnav-title > .as-chiclets-wrap:lang(zh-MO),
+    .localnav-title > .as-chiclets-wrap .as-chiclets-text:lang(zh-MO) {
+        font-family: "SF Pro HK", "SF Pro TC", "SF Pro Display", "SF Pro Icons", "AOS Icons", "PingFang HK", "Helvetica Neue", "Helvetica", "Arial", sans-serif; 
+    }
+  
+    .localnav-title:lang(zh-TW),
+    .localnav-title > .as-chiclets-wrap:lang(zh-TW),
+    .localnav-title > .as-chiclets-wrap .as-chiclets-text:lang(zh-TW) {
+        font-family: "SF Pro TC", "SF Pro Display", "SF Pro Icons", "AOS Icons", "PingFang TC", "Helvetica Neue", "Helvetica", "Arial", sans-serif; 
+    }
+}
+
+.as-configuration-category-footnotes-comingsoon {
+    color: #000000;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    padding-bottom: 20px;
+}
+
+.as-configuration-category-footnotes {
+    padding-left: 0;
+}
+
+.as-configuration-category-footnotes-comingsoon .as-configuration-category-footnotes-comingsoon-title {
+    color: #000000;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.as-configuration-category-footnotes-comingsoon .as-optionselector-footerlist {
+    list-style: disc inside;
+}
+
+.as-configuration-category-footnotes-comingsoon .as-optionselector-footer {
+    list-style: none;
+}
+
+.as-configuration-category-footnotes-comingsoon .as-optionselector-footerlist,
+.as-configuration-category-footnotes-comingsoon .as-optionselector-footer {
+    margin: 0;
+}
+
+.as-configuration-category-footnotes-comingsoon .as-optionselector-footerlist li,
+.as-configuration-category-footnotes-comingsoon .as-optionselector-footer li {
+    margin-top: 5px;
+}
+
+.br .as-actiontray-chatonline,
+.tr .as-actiontray-chatonline {
+    max-width: 410px;
+}
+
+@media only screen and (max-width: 1023px) and (max-device-width: 736px) {
+    .br .as-actiontray-chatonline,
+    .tr .as-actiontray-chatonline  {
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-device-width: 320px) and (orientation: portrait) {
+    .cto-macbook-pro .form-choiceselectorlabel-twocolleft {
+        padding-right: 14px;
+    }
+}

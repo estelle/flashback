@@ -1,0 +1,1221 @@
+<!DOCTYPE HTML>
+<html>
+<head> 
+<meta charset="utf-8" />
+    <title>The humble radio button</title>
+<!--
+Made by: Estelle Weyl
+Copyright:  CC-SA-NC-BY - Creative Commons Attribution-NonCommercial-ShareAlike
+Based on: https://estelle.github.com/slides 
+-->    
+<link rel="stylesheet"  class="removeForAT" href="scss/styles.css">
+<style>
+</style> 
+<base target="play"/>
+</head>
+
+<body> 
+<div id="presentation">
+   <div id="slides">
+   
+  <div class="slide intro">
+    <section class="content">
+    <h1>The humble radio button</h1>
+    <p style="transform: scale(5); text-align: center; transform-origin: center;" role="presentatiom">
+      <input type="radio" name="homepage">
+      <input type="radio" name="homepage">
+    </p>
+    <p>&nbsp;</p>
+      <h2>Estelle Weyl (@estellevw)</h2>
+      <p><a href="https://estelle.github.io/radiobutton/
+">https://estelle.github.io/radiobutton/</a></p>
+
+      <button type="button" id="killCSS" class="skiplink">Enable Screen Reader Access</button>
+    </section>
+  </div>
+
+
+<div class="slide">
+  <header><h1>2011</h1></header>
+  <div class="content visualfade">
+      <pre contenteditable>&lt;script src="<b>jquery.js</b>"&gt;&lt;/script&gt;
+          
+&lt;script type="text/javascript"&gt;                                         
+   <b>$('li:first').addClass('first'); </b>    
+&lt;/script&gt;
+</pre>
+  </div>
+</div>
+
+<!-- Ember radio widget -->
+
+<div class="slide object" style="background: url(assets/images/emberwidget.png) no-repeat center; background-size: contain">
+<a href="https://opensource.addepar.com/ember-widgets/#/ember-widgets/radioButton" class="pagelink">Original Site</a>
+</div>
+
+
+
+<div class="slide">
+  <div class="content"><label class="focusbot"><input type="text"> Get focus</label>
+<form>
+  <fieldset style="width: 75%; margin: auto"><legend>Radio Buttons are</legend>
+
+    <ul style="list-style-type: none">
+      <li><input id="rbb1" type="radio" name="a11y" value="important"> <label for="rbb1">by default accessible</label></li>
+      <li><input id="rbb2" type="radio" name="a11y" value="useful"> <label for="rbb2">super useful</label></li>
+      <li><input id="rbb3" type="radio" name="a11y" value="required"> <label for="rbb3">natively navigable</label></li>
+      <li><input id="rbb4" type="radio" name="a11y" value="helpful"> <label for="rbb4">supported in all browsers</label></li>
+      <li><input id="rbb5" type="radio" name="a11y" value="the right thing to do"> <label for="rbb5">semantic</label></li>
+      <li><input id="rbb6" type="radio" name="a11y" value="simple"> <label for="rbb6">easy to implement</label></li>
+      <li><input id="rbb7" type="radio" name="a11y" value="all"> <label for="rbb7">All of the above</label></li>
+
+  </fieldset></form>
+
+  </div>
+</div>
+
+
+
+
+
+
+<!-- divider -->
+
+<div class="slide intro">
+<header><h1>Accessibility</h1></header>
+</div>
+
+
+
+<!-- slide -->
+<div class="slide blind">
+<h1>Screen Reader experience</h1>
+<p><a href="" aria-label="don't click this link. It's a example fo bad user experience">click here</a>
+</p>
+</div>
+
+
+<!-- Slide -->
+<div class="slide deaf">
+
+<h1>Hearing impaired experience</h1>
+<section>
+<iframe src="https://vine.co/v/eaKw7953pij/embed/simple" width="600" height="600" frameborder="0"></iframe><script src="https://platform.vine.co/static/scripts/embed.js"></script>
+  </video>
+  </section>
+</div>
+
+<!-- slide -->
+<div class="slide deaf colorblind" style="background-image: url(assets/images/colors.jpg)">
+<h1>Color Blindness experience</h1>
+</div>
+
+
+<!-- slide -->
+   <div class="slide tweet" style="text-align: center; padding-top: 40px;"> 
+<a href="https://twitter.com/dugboticus/status/720542337185771520"><img alt="Disability: a mismatch in interaction between the features of a person’s body and the features of the environment in which they live. &mdash; Alistair Duggin (@dugboticus) April 14, 2016" src="assets/images/tweetdisability.png"></a>
+</div>
+
+
+<div class="slide graph svg">
+<header><h1>We all benefit from the <abbr title="Americans with Disabilities Act">ADA</abbr></h1></header>
+	
+<ul class="">
+	<li><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 96 120" enable-background="new 0 0 96 96" xml:space="preserve"><path d="M90,79h-8V49c0-1.1-0.9-2-2-2h-7.408c-1.424-4.4-3.699-8.416-6.619-11.86C65.973,35.092,66,35.052,66,35V17c0-1.1-0.9-2-2-2  H26V5c0-1.1-0.896-2-2-2h-6c-1.104,0-2,0.9-2,2s0.896,2,2,2h4v20c0,0.056,0.028,0.1,0.032,0.156C11.288,33.18,4,44.668,4,57.836  C4,77.229,19.772,93,39.16,93c19.388,0,35.164-15.771,35.164-35.164c0-2.34-0.248-4.624-0.68-6.836H78v30c0,1.1,0.9,2,2,2h10  c1.104,0,2-0.9,2-2S91.1,79,90,79z M26,19h36v12.156c-6.152-5.272-14.12-8.48-22.84-8.48c-4.656,0-9.088,0.924-13.16,2.584V19z   M39.16,63.836c-3.308,0-5.996-2.691-5.996-6s2.688-6,5.996-6c3.312,0,6.004,2.691,6.004,6S42.472,63.836,39.16,63.836z"></path><path d="M41.16,57.836c0,1.105-0.895,2-2,2s-2-0.895-2-2s0.895-2,2-2S41.16,56.73,41.16,57.836z"></path><text x="0" y="111" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">Created by iconsmind.com</text><text x="0" y="116" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">from the Noun Project</text></svg></li>
+	<li>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 96 120" enable-background="new 0 0 96 96" xml:space="preserve"><path d="M44.988,63h20c15.863,0,28.836-12.393,29.871-28H15.12C16.16,50.604,29.124,63,44.988,63z"></path><path d="M12.156,31h5.66L4.528,17.712c-0.78-0.776-2.048-0.776-2.828,0c-0.78,0.78-0.78,2.048,0,2.828L12.156,31z"></path><path d="M64.988,3h-12c-1.104,0-2,0.896-2,2v26h43.896C93.844,15.392,80.855,3,64.988,3z"></path><path d="M78.652,65c-7.721,0-14,6.28-14,14c0,7.721,6.279,14,14,14c7.72,0,14-6.279,14-14C92.652,71.28,86.372,65,78.652,65z"></path><path d="M34.652,65c-7.72,0-14,6.28-14,14c0,7.721,6.28,14,14,14c7.72,0,14-6.279,14-14C48.652,71.28,42.372,65,34.652,65z"></path></svg>
+	</li>
+	<li>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 96 120" enable-background="new 0 0 96 96" xml:space="preserve"><path d="M10.74,62.676l48.084-48.084l-3.816-3.82c-3.832-3.836-11.72-3.272-15.836,0.844L7.388,43.4  c-4.24,4.244-4.46,11.464-0.464,15.456L10.74,62.676z"></path><path d="M91.352,18.836l-4.244-4.244c-0.779-0.78-2.051-0.78-2.828,0c-0.779,0.776-0.779,2.048,0,2.828l2.828,2.828L75.788,31.56  L61.652,17.42L13.568,65.504l6.108,6.104c0.392,0.393,0.904,0.584,1.416,0.584c0.512,0,1.024-0.195,1.416-0.584  c4.852-4.852,11.852-5.084,16.504-0.432c0.752,0.752,2.08,0.752,2.828,0l49.516-49.512c0.377-0.376,0.584-0.884,0.584-1.416  S91.729,19.212,91.352,18.836z"></path><path d="M24.848,73.027c-3.372,3.381-3.368,8.873,0.004,12.248c1.636,1.633,3.808,2.537,6.12,2.537c2.316,0,4.488-0.904,6.124-2.541  c3.372-3.371,3.372-8.863,0-12.248C33.82,69.752,28.116,69.752,24.848,73.027z"></path></svg>
+	</li>
+	</ul>
+</div>
+
+<div class="slide graph">
+<header><h1>Disability is a spectrum</h1></header>
+<div class="arrow" style="margin-top: 30px">
+		<div>permanent</div>
+		<div class="border"><span>Temporary</span></div>
+		<div>situational</div>
+	</div>
+<ul>
+	<li>Parapalegic</li>
+	<li>Broken Leg</li>
+	<li>Stillettos</li>
+</ul>
+
+<ul>
+	<li>Blind</li>
+	<li>Reading Glasses</li>
+	<li>Sun Glare</li>
+</ul>
+<ul>
+	<li>Dyslexic</li>
+	<li>Medicated</li>
+	<li>Distracted</li>
+</ul>
+
+<ul>
+	<li>Quadrapalegic</li>
+	<li>Broken Arm</li>
+	<li>Holding a Baby</li>
+</ul>
+
+<ul>
+	<li>Hard of Hearing</li>
+	<li>Aircraft Marshaller</li>
+	<li>Forgotten Headphones</li>
+</ul>
+
+
+	<div class="arrow">
+		<div>permanent</div>
+		<div class="border"><span>Temporary</span></div>
+		<div>situational</div>
+	</div>
+</div>
+
+
+<div class="slide">
+  <header><h1>Radio Buttons</h1></header>
+  <div class="content">
+<form>
+  <fieldset style="width: 75%; margin: auto"><legend>Accessibility is</legend>
+
+    <ul style="list-style-type: none">
+      <li><input id="rb1" type="radio" name="a11y" value="important"> <label for="rb1">important</label></li>
+      <li><input id="rb2" type="radio" name="a11y" value="useful"> <label for="rb2">useful</label></li>
+      <li><input id="rb4" type="radio" name="a11y" value="helpful"> <label for="rb4">helpful for everyone</label></li>
+      <li><input id="rb5" type="radio" name="a11y" value="the right thing to do"> <label for="rb5">the right thing to do</label></li>
+      <li><input id="rb6" type="radio" name="a11y" value="simple"> <label for="rb6">simple</label></li>
+      <li><input id="rb3" type="radio" name="a11y" value="required"> <label for="rb3">required</label></li>
+      <li><input id="rb7" type="radio" name="a11y" value="all"> <label for="rb7">All of the above</label></li>
+
+  </fieldset>
+<input type="submit">
+  </div>
+</div>
+
+<div class="slide">
+<h1 class="aria"><i>A</i>ccessible
+<i>R</i>ich
+<i>I</i>nternet 
+<i>A</i>pplications</h1>
+</div>
+
+
+
+
+<div class="slide myquote"> 
+<section class="content">
+<blockquote><p>The 1st rule of ARIA use is if you can use a native HTML element or attribute with the semantics behavior already built in, do that instead!</p></section>
+
+</div>
+
+
+
+
+
+
+
+<div class="slide myquote"> 
+<section class="content">
+<blockquote><p>HTML is by default accessible. And fast. <br/>Our job as developers is to not fuck that up!</p></section>
+
+</div>
+
+
+
+
+
+
+<div class="slide intro">
+<header><h1>Performance</h1></header>
+</div>
+
+
+
+      <!-- slide -->
+   <div class="slide"> 
+
+<section class="content myquote">
+<blockquote><p>I remember when 3G was primary mobile speed. It was slow but still worked, so why now when my phone says 3G it becomes completely useless.</p>&mdash; Stephen Gundee (<a href="https://twitter.com/StephenGundee/status/712650972133138433">@StephenGundee</a>) 
+</section>
+</div>
+
+      <!-- slide -->
+   <div class="slide"> 
+     <header>
+     	<h1>November 2010</h1>
+     </header> 
+    <img  style="height: 80vh; display: inline-block; margin: auto;" id="bytesperpage2" class="chart" src="https://chart.googleapis.com/chart?chs=700x394&amp;cht=p&amp;chco=226daa&amp;chd=t:416,34,25,113,2,22&amp;chds=0,416&amp;chdlp=b&amp;chdl=total 702 kB&amp;chl=Images+-+416+kB%7CHTML+-+34+kB%7CStylesheets+-+25+kB%7CScripts+-+113+kB%7CFonts+-+2+kB%7COther+-+22+kB&amp;chma=|5&amp;chtt=Average+Bytes+per+Page+by+Content+Type+November+2010" alt='In 2010, content was Images=416kb, HTML=34kb, Stylesheets=25kb, Scripts=113kb, Fonts=2kb, and Other=22kb for a total of 702kb'>
+
+   </div> 
+
+
+<div class="slide"> 
+  <header>
+    <h1>February 15, 2018</h1>
+  </header> 
+  <img style="height: 80vh; display: inline-block; margin: auto;" id="bytesperpage" class="chart" src="https://chart.googleapis.com/chart?chs=700x394&cht=p&chco=226daa&chd=t:1434,76,73,613,99,1204,3&chds=0,1434&chdlp=b&chdl=total 3508 kB&chl=Images+-+1434+kB%7CHTML+-+76+kB%7CStylesheets+-+73+kB%7CScripts+-+613+kB%7CFonts+-+99+kB%7CVideo+-+1204+kB%7COther+-+3+kB&chma=|5&chtt=Average+Bytes+per+Page+by+Content+Type"
+  alt='In 2018, content is Images=1434kb, HTML=76kb, Stylesheets=73kb, Scripts=613kb, Fonts=99kb, Video=1204 and Other=3kb for a total of 3,508 kb'>
+
+  <a href="https://httparchive.org/interesting.php?a=All" class="pagelink">HTTPArchive</a>
+</div>
+ 
+
+  
+   
+      <!-- slide -->
+<div class="slide"> 
+  <header><h1>2010 vs 2018</h1></header> 
+  <section class="overlapping_pies">
+    <div class="big_piechart"  style="
+          background-image: url(https://chart.googleapis.com/chart?chs=700x394&amp;cht=p&amp;chco=226daa&amp;is3D=true&amp;chd=t:1434,76,73,613,99,1204,3&amp;chds=0,1799&amp;chdlp=b&amp;chma=|5);">
+      <div class="small_piechart"  style="
+          background-image: url(https://chart.googleapis.com/chart?chs=360x200&amp;cht=p&amp;chco=333333&amp;chd=t:416,34,25,113,2,22&amp;chbg=transparent&amp;chds=0,416&amp;chdlp=b&amp;chma=|5);border-radius: 50%;"></div>
+      <span  aria-label="for a total increase of of 5X over 8 years">5x</span>
+    </div>
+  </section>
+</div>
+   
+
+
+<div class="slide intro">
+<header><h1>Prescriptions</h1></header>
+</div>
+
+
+
+<div class="slide">
+<header><h1>Image Optimization</h1></header>
+<section class="content">
+  <ul style="columns: 2 7em">
+    <li>If possible, omit images</li>
+    <li>Compress all videos
+        <ul>
+          <li>GZip</li>
+          <li>image meta data</li>
+          <li>Many image sizes</li>
+          <li>Best image format</li>
+          <li>&lt;picture> and source set</li>
+          <li><s>avoid browser resizing</s></li>
+        </ul>
+    </li>
+    <li>Leverage CSS 
+      <ul>
+        <li>sprites</li>
+        <li>Image effects</li>
+        <li>instead of animated gifs</li>
+        <li>media queries</li>
+      </ul>
+    <li>Only load images as needed
+      <ul><li>Lazy load</li></ul>
+    </li>
+</ul>
+<p><a href="https://images.guide/">Essential Image Optimization</a></p>
+</section>
+</div>
+ 
+  
+
+
+<div class="slide">
+<header><h1>Video Optimization</h1></header>
+<section class="content">
+  <ul>
+    <li>If possible, omit videos</li>
+    <li>Compress all videos</li>
+    <li>Optimize &lt;source> order</li>
+    <li>Remove audio from muted heroes</li>
+</ul>
+<small><a href="http://www.standardista.com/web-performance-video-optimization/">http://www.standardista.com/web-performance-video-optimization/</a></small>
+</section>
+
+</div>
+
+
+<div class="slide">
+<header><h1>Performance Tools</h1></header>
+<section class="content" style="margin-top: -40px">
+  <ul>
+    <li><a href="https://yslow.org/">YSlow</a> <small style="display:inline">- abandoned</small></li>
+    <li><a href="https://developers.google.com/speed/pagespeed/insights/">Page Speed / Insights</a></li>
+<li><a href="https://webpagetest.org">WebPageTest.org</a></li>
+<li><a href="https://tools.pingdom.com">PingDOM.com</a></li>
+<li>Browser Dev Tools<ul>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Tools#The_Core_Tools">Mozilla Developer Tools</a></li>
+    <li><a href="https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide/performance">Edge Performance Panel</a></li>
+<li><a href="https://developers.google.com/web/tools/chrome-devtools/rendering-tools/">Chrome Developer Tools</a></li>
+  </ul>
+</li>
+<li><a href="https://developers.google.com/web/tools/lighthouse/"><u>Lighthouse</u></a> PWA, Performance, Best Practices, a11y</li>
+</ul>
+
+</section>
+</div>
+
+
+
+<div class="slide"> 
+<header><h1>Usability Rules</h1></header> 
+<section class="content"> 
+<dl class="hidden_dd">
+<dt>Avoid plugins</dt>
+ 
+<dt>Configure the viewport</dt>
+ <dd>Optimize pages to display well on mobile devices by including a meta viewport in the head of the document specifying <code>width=device-width, initial-scale=1</code>.
+
+<pre>&lt;meta name=viewport content="width=device-width, initial-scale=1"&gt;</pre></dd>
+<dt>Size content to viewport</dt>
+ <dd>Scrolling websites vertically is Okay, but horizontally creates poor user experience. Use media queries and <code>vh</code>, <code>vw</code> and percents for width.
+
+</dd>
+<dt>Size tap targets appropriately</dt>
+ <dd>Set a minimum tap target size of  of 48 CSS pixels on a site with a properly-set mobile viewport. Make important tap targets large enough to be easy to press, ensuring there is extra spacing between smaller tap targets.</dd>
+<dt>Use legible font sizes</dt>
+
+ </dl>
+ <a class="pagelink" href="https://developers.google.com/speed/docs/insights/rules">Page Speed Insights</a>
+ </section>
+</div>
+
+
+
+<div class="slide wcag2">
+  <header><h1>WCAG 2</h1></header>
+<section style="height: 80vh; overflow: scroll;">
+<p><strong>Perceivable:</strong>    Content &amp; UI components</p>
+<ol>
+<li>Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols or simpler language.</li>
+<li>Time-based media: Provide alternatives for time-based media.</li>
+<li>Create content that can be presented in different ways (for example simpler layout) without losing information or structure.
+</li>
+<li>Make it easier for users to see and hear content including separating foreground from background.</li>
+</ol>
+<p><strong>Operable:</strong> UI and Nav </p>
+<ol>
+<li>Make all functionality available from a keyboard.</li>
+</li>
+<li>Provide users enough time to read and use content.
+</li>
+<li>Do not design content in a way that is known to cause seizures.
+</li>
+<li>Provide ways to help users navigate, find content, and determine where they are.</li>
+</ol>
+<p>
+<strong>Understandable:</strong><br/>
+&nbsp; &nbsp; Information &amp; operation of UI</p>
+<ol>
+<li>Make text content readable and understandable.
+</li>
+<li>Make web pages appear and operate in predictable ways.
+</li>
+<li>Help users avoid and correct mistakes.</li>
+</ol>
+<p><strong>Robust:</strong><br/>
+&nbsp; &nbsp; Content interprable by UAs, including AT.</p>
+<ol>
+<li>Maximize compatibility with current and future user agents, including assistive technologies.
+</li>
+</ol></section>
+</div>
+
+
+
+
+
+
+<div class="slide">
+<header><h1>Tips</h1></header>
+<section>
+<p class="temphidden">UA Sniffing ≠ AT Sniffing</p>
+<p class="temphidden">Managing focus is required. Has to be added with JavaScript</p>
+<p class="temphidden">Use browser defaults as much as possible</p>
+<p class="temphidden">HTML > CSS > JS</p>
+</section>
+</div>
+
+
+
+
+<div class="slide"> 
+  <header>
+    <h1>Images, Videos, &amp; Scripts</h1>
+  </header> 
+  <img style="height: 80vh; display: inline-block; margin: auto;" id="bytesperpage" class="chart" src="https://chart.googleapis.com/chart?chs=700x394&cht=p&chco=226daa&chd=t:1434,76,73,613,99,1204,3&chds=0,1434&chdlp=b&chdl=total 3508 kB&chl=Images+-+1434+kB%7CHTML+-+76+kB%7CStylesheets+-+73+kB%7CScripts+-+613+kB%7CFonts+-+99+kB%7CVideo+-+1204+kB%7COther+-+3+kB&chma=|5&chtt=Average+Bytes+per+Page+by+Content+Type"
+  alt='In 2018, content is Images=1434kb, HTML=76kb, Stylesheets=73kb, Scripts=613kb, Fonts=99kb, Video=1204 and Other=3kb for a total of 3,508 kb'>
+
+  <a href="https://httparchive.org/interesting.php?a=All" class="pagelink">HTTPArchive</a>
+</div>
+
+<div class="slide intro">
+<header><h1>Issues</h1></header>
+</div>
+
+<div class="slide">
+<header><h1>43 Dependencies</h1></header>
+<section>
+<ul>
+  <li>React</li>
+  <li style="opacity: 0.9">Backbone</li>
+  <li style="opacity: 0.8">jQuery</li>
+  <li style="opacity: 0.7">Bootstrap</li>
+  <li style="opacity: 0.6">jQuery input masking</li>
+  <li style="opacity: 0.5">drop down select</li>
+  <li style="opacity: 0.4">kitchen sink</li>
+  <li style="opacity: 0.3">left pad</li>
+  <li style="opacity: 0.2">susy</li>
+  <li style="opacity: 0.1">learn how to @#$%ing code</li>
+
+</section>
+</div>
+
+<div class="slide object" style="background: url(assets/images/visalogin.png) no-repeat center 0;">
+<object data="https://secure.checkout.visa.com"></object>
+<a href="https://secure.checkout.visa.com" class="pagelink">Original Site</a>
+</div>
+
+
+<div class="slide">
+<div style="text-align: center;font-weight: bold;font-size: 30vw; transform: scale(1,0.8); color: #226DAA">RDD</div>
+</div>
+
+
+
+
+<div class="slide">
+<header><h1>CSS</h1></header>
+<section>
+<p>8,596 lines, 627 KiB</p>
+<pre  class="visualfade">@<b>-webkit-</b>keyframes fadeOutAndMoveDown {
+    0% {
+        top: 50%;
+        opacity: 1;
+        <b>-ms-</b>filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"
+    }
+
+    100% {
+        top: 55%;
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
+    }
+}</pre>
+</section>
+</div>
+
+<div class="slide intro">
+<header><h1></h1></header>
+Images != JavaScript
+</div>
+
+<div class="slide" style="
+background-image: url(assets/images/scaffolding.jpg); 
+background-size: cover;" aria-label="Image of bay bridge's scaffolding">
+<span class="photocredit">Photo: <a href="https://www.flickr.com/photos/toasty/">Kenneth Lu</a></span>
+</div>
+
+
+
+<!--<div class="slide object">
+  <header><h1>WebPageTest</h1></header>
+<object data="https://www.webpagetest.org/result/160406_HP_14ZZ/1/details/"></object>
+</div>-->
+
+
+<div class="slide object" 
+style="background: url(assets/images/visalogin2.png) no-repeat center 0;">
+<object data="site/index.html"></object>
+<a href="site/index.html" class="pagelink">No Libraries, Same functionality</a>
+</div>
+
+<!---
+<div class="slide object">
+  <header><h1>WebPageTest</h1></header>
+<object data="https://www.webpagetest.org/result/160418_TW_NN/5/details/"></object>
+</div>-->
+
+
+<div class="slide object">
+<header><h1>WebPageTest: Comparison</h1></header>
+<object data="https://www.webpagetest.org/video/compare.php?tests=180302_09_c86bd4d9336a451703a50fa4b544cd6c%2C180302_G0_ea4364bba9525cb6d42df44f3fa5a8ab&thumbSize=200&ival=500&end=visual"></object>
+</div>
+
+
+<div class="slide object">
+<object data="site/index.html"></object>
+<a href="site/" class="pagelink">Removed plugins for Select, Carousel, &amp; Masking</a>
+</div>
+
+
+<div class="slide intro">
+<header><h1>Solutions</h1></header>
+</div>
+
+ 
+  
+<div class="slide normal"> 
+<header><h1>2003 JS Library</h1></header>
+<pre contenteditable>var <strong>isDHTML, isID, isAll, isLayers</strong>;
+
+if (document.<strong>getElementById</strong>) {
+  isID = 1; isDHTML = 1;
+} else {
+  if (document.<strong>all</strong>) {
+    isAll = 1; isDHTML = 1;
+  } else {
+    browserVersion = parseInt(navigator.appVersion);
+    if ((navigator.appName.indexOf('Netscape') != -1) && (browserVersion == 4)) {
+      isLayers = 1; isDHTML = 1;
+    }
+   }
+}
+
+function <strong>findDOM</strong>(objectID,withStyle) {
+ if (withStyle == 1) {
+   if (isID) { return (document.<strong>getElementById(objectID)</strong>.style) ; }
+   else { 
+     if (isAll) { return (document.<strong>all[objectID]</strong>.style); }
+     else {
+        if (isLayers) { return (document.<strong>layers[objectID]</strong>); }
+     };
+   }
+ } else {
+    if (isID) { return (document.getElementById(objectID)); 
+    } else { 
+       if (isAll) { 
+          return (document.all[objectID]); 
+       } else {
+            if (isLayers) { return (document.layers[objectID]); }
+       };
+    }
+  }
+}
+
+function setClass(objectID,newClass) {
+    var dom =findDOM(objectID, 0);
+    dom.className = newClass;
+}</pre>
+</div> 
+
+
+
+<div class="slide intro">
+  <div class="box">
+    <p aria-label="think outside the box">think</p>
+  </div>  
+</div>
+
+
+
+
+
+
+
+
+
+<div class="slide object">
+<object data="https://miketaylr.com/code/input-type-attr.html"></object>
+<a href="https://miketaylr.com/code/input-type-attr.html" class="pagelink">Browser Test</a>
+</div>
+
+
+<div class="slide">
+  <header><h1>ARIA Accessibilty</h1></header>
+    <section>
+      <ul>
+        <li>aria-labeledby="otherElement idValues"</li>
+        <li>aria-label="Read by Screen Reader"</li>
+        <li>&lt;label for="idOfFormControl"> (or implicit label)</li>
+        <li>placeholder</li>
+        <li>title</li>
+        <li>not accessible</li>
+      </ul>
+      <pre contenteditable>&lt;label for="telephone"&gt;Telephone Number&lt;/label&gt;
+  &lt;input type="tel" id="telephone" placeholder="(XXX) XXX-XXXX"
+  aria-describedby="hint"&gt;
+  &lt;span class="hint" id="hint"&gt;10-digit phone number&lt;/span&gt;</pre>
+  <label for="telephonex">Telephone Number</label>
+  <input type="tel" id="telephonex" placeholder="(XXX) XXX-XXXX" aria-describedby="hint3"><span class="hint" id="hint3">10-digit phone number</span>
+    </section>
+</div>
+
+
+
+
+<!-- Ember radio widget -->
+<div class="slide object" style="background: url(assets/images/emberwidget.png) no-repeat center; background-size: contain">
+<a href="https://opensource.addepar.com/ember-widgets/#/ember-widgets/radioButton" class="pagelink">Reimplements semantics, focus, tab order</a>
+</div>
+
+
+
+
+
+<div class="slide myquote">
+  <header><h1>HTML (1993)</h1></header>
+  <div class="content"><blockquote>"RADIO: For attributes which can take a single value from a set of alternatives. Each radio button in the group should be given the same NAME."</blockquote></div>
+</div>
+
+
+
+<div class="slide">
+  <header><h1>Application.hbs</h1></header>
+  <div class="content">
+<pre contenteditable   class="visualfade">{{#radio-button-group-component}}
+
+  <b>&lt;div class="radio-row"></b>
+    {{#radio-button value=true}}
+      <b>&lt;span class="form-label radio-label">True&lt;/span></b>
+    {{/radio-button}}
+  &lt;/div>
+
+  &lt;div class="radio-row">
+    {{#radio-button value=false}}
+      &lt;span class="form-label radio-label">False&lt;/span>
+    {{/radio-button}}
+  &lt;/div>
+
+{{/radio-button-group-component}</pre></div>
+</div>
+
+<div class="slide">
+  <header><h1>Semantic.hbs</h1></header>
+  <div class="content">
+<pre contenteditable  class="visualfade">{{#fieldset-radio-button-group-component <b>legend="Fieldset Legend"</b>}}
+
+  &lt;<b>label</b> class="radio-row">
+    {{#radio-button}}
+      True
+    {{/radio-button}}
+  &lt;/label>
+
+  <b>&lt;label>
+    {{#radio-button}}
+      False
+    {{/radio-button}}
+  &lt;/label></b>
+
+{{/radio-button-group-component}</pre></div>
+</div>
+
+
+<div class="slide object">
+<object data="site/merrygoround.html"></object>
+<a href="https://estelle.github.io/merry-go-round/" class="pagelink">Github Repo</a>
+
+</div>
+
+<div class="slide object">
+<object data="noreactvisacarousel.html"></object>
+<a href="noreactvisacarousel.html" class="pagelink"></a>
+</div>
+
+
+
+<div class="slide object">
+<object data="carousel_semantic1.html"></object>
+<img src="assets/images/carousel-carousel.png"  class="bytes" alt="Carousel script is 1.1kb">
+</div>
+
+
+
+
+
+
+
+<div class="slide object">
+<object data="carouselcss2.html"></object>
+<a href="https://github.com/estelle/merry-go-round" class="pagelink">Github Repo</a>
+
+</div>
+
+
+<div class="slide">
+  <header><h1>How it works</h1></header>
+  <div class="content">
+<pre contenteditable class="visualfade">
+function mgrChange (name, value) {
+  var ul = document.querySelector('.' + name);
+  ul.<b>setAttribute('class'</b>, name + ' left' + value);
+}</pre>
+</div>
+</div>
+
+<div class="slide">
+<header><h1>5 Accessibility Features</h1></header>
+<section>
+<ol>
+<li>Use the appropriate semantic elements (label and input)</li>
+
+<li>Label describes purpose of selection</li>
+
+<li>States (on / off) are distiguishable</li>
+
+<li>Keyboard access is supported
+</li>
+<li>Focus state is clearly visible</li></ol>
+</section>
+</div>
+
+<div class="slide object">
+<object data="https://www.w3.org/WAI/tutorials/carousels/"></object>
+<a href="https://www.w3.org/WAI/tutorials/carousels/" class="pagelink"><abbr title="Web Content Accessibility Guidelines">WCAG</abbr> Carousel Guidelines</a>
+</div>
+
+<div class="slide object">
+<object data="https://estelle.github.io/merry-go-round/horse.html"></object>
+<a href="https://estelle.github.io/merry-go-round/horse.html" class="pagelink">Merry-Go-Round</a>
+</div>
+
+
+<div class="slide">
+<div align="center">
+<img src="assets/images/carousel.png" alt="Merry Go Round" style="height: 40vh; margin: 10vh auto" />
+<br/>
+<img src="assets/images/ceci.png" lang="fr-fr" alt="Ceci n'est pas un carousel" style="height: 10vh;">
+</div>
+</div>
+
+<div class="slide intro">
+<header><h1>Merry-go-round</h1><h2>https://github.io/estelle/merry-go-round</h2>
+</div>
+
+<div class="slide object">
+<object data="site/index_js.html"></object>
+<a href="site/index_js.html" class="pagelink">Example Page</a>
+</div>
+
+
+<div class="slide object">
+<!--<object data="../a11yperf/visaselect.html" class="enlarge"></object>-->
+<img src="assets/images/dropkick.png" class="bytes" alt="5.8kb for the dropkick js file with jquery dependencyof 38.6 kb minified">
+<pre contenteditable class="visualfade">&lt;section id="footer-listbox" <b>role="listbox" aria-label</b>="Select your country" class="footer-languageSelector">
+  &lt;section <b>role="option" tabindex="-1" aria-selected="true" </b>
+    id="footerLanguageOption-0" data-value="AR" class="footer-languageSelector-item">
+    &lt;label>Argentina&lt;/label>
+    &lt;i class="footer-languageSelector-item-icon footer-img-AR">&lt;/i>
+  &lt;/section>
+  &lt;section <b>role="option" tabindex="-1" aria-selected="false" </b> 
+    id="footerLanguageOption-1" data-value="AU" class="footer-languageSelector-item">
+    &lt;label>Australia&lt;/label>
+    &lt;i class="footer-languageSelector-item-icon footer-img-AU">&lt;/i>
+  &lt;/section>
+  &lt;section <b>role="option" tabindex="-1" aria-selected="false"</b>  
+    id="footerLanguageOption-2" data-value="BR" class="footer-languageSelector-item">
+    &lt;label>Brazil&lt;/label>
+    &lt;i class="footer-languageSelector-item-icon footer-img-BR">&lt;/i>
+  &lt;/section>
+  &lt;section <b>role="option" tabindex="-1" aria-selected="false"  </b>
+    id="footerLanguageOption-3" data-value="CA" class="footer-languageSelector-item">
+    &lt;label>Canada&lt;/label>
+    &lt;i class="footer-languageSelector-item-icon footer-img-CA">&lt;/i>
+  &lt;/section>
+  &lt;section <b>role="option" tabindex="-1" aria-selected="false" </b> 
+    id="footerLanguageOption-4" data-value="CL" class="footer-languageSelector-item">
+    &lt;label>Chile&lt;/label>
+    &lt;i class="footer-languageSelector-item-icon footer-img-CL">&lt;/i>
+  &lt;/section>
+  &lt;section <b>role="option" tabindex="-1" aria-selected="false" </b> 
+    id="footerLanguageOption-5" data-value="CN" class="footer-languageSelector-item">
+    &lt;label>China&lt;/label>
+    &lt;i class="footer-languageSelector-item-icon footer-img-CN">&lt;/i>
+  &lt;/section>
+  &lt;section <b>role="option" tabindex="-1" aria-selected="false"  </b>
+    id="footerLanguageOption-6" data-value="CO" class="footer-languageSelector-item">
+    &lt;label>Colombia&lt;/label>
+    &lt;i class="footer-languageSelector-item-icon footer-img-CO">&lt;/i>
+  &lt;/section>
+  &lt;section role="option" tabindex="-1" aria-selected="false"  
+    id="footerLanguageOption-7" data-value="HK" class="footer-languageSelector-item">
+    &lt;label>Hong Kong&lt;/label>
+    &lt;i class="footer-languageSelector-item-icon footer-img-HK">&lt;/i>
+  &lt;/section>
+  &lt;section role="option" tabindex="-1" aria-selected="false"  
+    id="footerLanguageOption-8" data-value="MY" class="footer-languageSelector-item">
+    &lt;label>Malaysia&lt;/label>
+    &lt;i class="footer-languageSelector-item-icon footer-img-MY">&lt;/i>
+  &lt;/section>
+  &lt;section role="option" tabindex="-1" aria-selected="false"  
+    id="footerLanguageOption-9" data-value="MX" class="footer-languageSelector-item">
+    &lt;label>Mexico&lt;/label>
+    &lt;i class="footer-languageSelector-item-icon footer-img-MX">&lt;/i>
+  &lt;/section>
+  &lt;section role="option" tabindex="-1" aria-selected="false"  
+    id="footerLanguageOption-10" data-value="NZ" class="footer-languageSelector-item">
+    &lt;label>New Zealand&lt;/label>
+    &lt;i class="footer-languageSelector-item-icon footer-img-NZ">&lt;/i>
+  &lt;/section>
+  &lt;section role="option" tabindex="-1" aria-selected="false"  
+    id="footerLanguageOption-11" data-value="PE" class="footer-languageSelector-item">
+    &lt;label>Peru&lt;/label>
+    &lt;i class="footer-languageSelector-item-icon footer-img-PE">&lt;/i>
+  &lt;/section>
+  &lt;section role="option" tabindex="-1" aria-selected="false"  
+    id="footerLanguageOption-12" data-value="SG" class="footer-languageSelector-item">
+    &lt;label>Singapore&lt;/label>
+    &lt;i class="footer-languageSelector-item-icon footer-img-SG">&lt;/i>
+  &lt;/section>
+  &lt;section role="option" tabindex="-1" aria-selected="false"  
+    id="footerLanguageOption-13" data-value="ZA" class="footer-languageSelector-item">
+    &lt;label>South Africa&lt;/label>
+    &lt;i class="footer-languageSelector-item-icon footer-img-ZA">&lt;/i>
+  &lt;/section>
+  &lt;section role="option" tabindex="-1" aria-selected="false"  
+    id="footerLanguageOption-14" data-value="AE" class="footer-languageSelector-item">
+    &lt;label>United Arab Emirates&lt;/label>
+    &lt;i class="footer-languageSelector-item-icon footer-img-AE">&lt;/i>
+  &lt;/section>
+&lt;/section></pre>
+</div>
+
+
+
+
+<div class="slide object">
+<!--<object data="../a11yperf/estelleselect.html" class="enlarge"></object>-->
+<img src="assets/images/language_selector_time.png"  class="bytes" alt="Selector script is 917 bytes"/>
+<pre contenteditable class="visualfade"><b>&lt;fieldset class="languageSelector">
+  &lt;legend>Select your country:&lt;/legend></b>
+  &lt;ul>
+    &lt;li>
+        &lt;input type="radio" name="langSelect"  id="langAR" value="AR">
+        &lt;label for="langAR" class="langAR">Argentina&lt;/label>
+    &lt;/li>
+    &lt;li>
+      <b>&lt;input type="radio" name="langSelect" id="langAU" value="AU">
+        &lt;label for="langAU" class="langAU">Australia&lt;/label></b>
+    &lt;/li>
+    &lt;li>
+      &lt;input type="radio" name="langSelect" id="langBR" value="BR">
+        &lt;label for="langBR" class="langBR">Brazil&lt;/label>
+    &lt;/li>
+    &lt;li>
+      &lt;input type="radio" name="langSelect" id="langCA" value="CA">
+        &lt;label for="langCA" class="langCA">Canada&lt;/label>
+    &lt;/li>
+    &lt;li>
+      &lt;input type="radio" name="langSelect" id="langCL" value="CL">
+        &lt;label for="langCL" class="langCL">Chile&lt;/label>
+    &lt;/li>
+    &lt;li>
+      &lt;input type="radio" name="langSelect" id="langCN" value="CN">
+        &lt;label for="langCN" class="langCN">China&lt;/label>
+    &lt;/li>
+    &lt;li>
+      &lt;input type="radio" name="langSelect" id="langCO" value="CO">
+        &lt;label for="langCO" class="langCO">Colombia&lt;/label>
+    &lt;/li>
+    &lt;li>
+      &lt;input type="radio" name="langSelect" id="langHK" value="HK">
+        &lt;label for="langHK" class="langHK">Hong Kong&lt;/label>
+    &lt;/li>
+    &lt;li>
+      &lt;input type="radio" name="langSelect" id="langMY" value="MY">
+        &lt;label for="langMY" class="langMY">Malaysia&lt;/label>
+    &lt;/li>
+    &lt;li>
+      &lt;input type="radio" name="langSelect" id="langMX" value="MX">
+        &lt;label for="langMX" class="langMX">Mexico&lt;/label>
+    &lt;/li>
+    &lt;li>
+      &lt;input type="radio" name="langSelect" id="langNZ" value="NZ">
+        &lt;label for="langNZ" class="langNZ">New Zealand&lt;/label>
+    &lt;/li>
+    &lt;li>
+      &lt;input type="radio" name="langSelect" id="langPE" value="PE">
+        &lt;label for="langPE" class="langPE">Peru&lt;/label>
+    &lt;/li>
+    &lt;li>
+      &lt;input type="radio" name="langSelect" id="langSG" value="SG">
+        &lt;label for="langSG" class="langSG">Singapore&lt;/label>
+    &lt;/li>
+    &lt;li>
+      &lt;input type="radio" name="langSelect" id="langZA" value="ZA">
+        &lt;label for="langZA" class="langZA">South Africa&lt;/label>
+    &lt;/li>
+    &lt;li>
+      &lt;input type="radio" name="langSelect" id="langAE" value="AE">
+        &lt;label for="langAE" class="langAE">United Arab Emirates&lt;/label>
+    &lt;/li>
+    &lt;li>
+      &lt;input type="radio" name="langSelect" id="langUS" value="US">
+        &lt;label for="langUS" class="langUS">United States&lt;/label>
+    &lt;/li>
+  &lt;/ul>
+&lt;/fieldset></pre>
+</div>
+
+
+
+<div class="slide">
+<pre>footer {
+  fieldset {
+      width: 215px;
+      height: 160px;
+      padding-right: 7px;
+    li {
+      font-size: $small;
+      width: 100%;
+      padding-left: 5px;
+      border-top: 1px solid $label;
+      line-height: 34px;
+    }
+    label {
+      color: $white;
+      background-position: 95% 50%;
+      display: block;
+      padding-left: 3px;
+    }
+  }
+}</pre>
+<!--
+<object data="../a11yperf/_languageselector.html" class="enlarge"></object>-->
+</div>
+
+
+<div class="slide">
+<pre class="visualfade">footer {
+  &.open {
+    height: 168px; 
+  }
+  &.closed fieldset {
+    <b>transform: scale(1,0); </b>
+  }
+  fieldset {
+    <b>input[type=radio], legend </b>{
+    opacity: 0.01;
+    position: absolute; right: 0px;
+  }
+    <b>label:active,
+    label:focus,
+    label:hover,
+    :checked + label</b> {
+      outline: 1px dotted $white;
+      background-color: $mediumLightGray;
+    }
+  }
+}</pre>
+</div>
+
+
+
+
+
+
+<div class="slide object">
+<object data="inputmask.html"></object>
+<a href="inputmask.html" class="pagelink">Open</a>
+<img src="assets/images/inputmasksize_a11y.png"  class="bytes" alt="script is only 2.0kb">
+</div>
+
+
+
+
+
+<div class="slide object">
+<object data="https://robinherbots.github.io/Inputmask/"></object>
+<a href="https://robinherbots.github.io/Inputmask/" class="pagelink">Github Repo</a>
+<img src="assets/images/inputmasksize.png"  class="bytes" alt="jquery at 37.7kb and input masking script is 29.6kb">
+</div>
+
+
+
+
+<div class="slide object">
+<object data="inputmask.html"></object>
+<a href="inputmask.html" class="pagelink">Open</a>
+<img src="assets/images/inputmasksize_a11y.png"  class="bytes" alt="script is only 2.0kb">
+</div>
+
+
+
+
+<div class="slide">
+<pre contenteditable class="allcode visualfade" style="padding-top: 23px;">&lt;ul>
+  &lt;li>
+    &lt;label for="expiration">Credit Card Expiration Month&lt;/label>
+    &lt;input id="expiration" type="tel" placeholder="MM/YY" class="masked" 
+    pattern="(1[0-2]|0[1-9])\/\d\d" data-valid-example="11/18" 
+    title="2-digit month and 2-digit year greater than 01/15">
+  &lt;/li>
+
+&lt;li>
+  &lt;label for="zip">Zip Code&lt;/label>
+  <b>&lt;input id="zip" type="tel" name="zipcode" class="masked" 
+  placeholder="XXXXX" pattern="\d{5}" title="5-digit zip code"></b>
+&lt;/li>
+&lt;li>
+  &lt;label for="zipca">Canadian Zip Code&lt;/label>
+  &lt;input id="zipca" type="text" name="zipcodeca"  class="masked"
+  placeholder="XXX XXX" pattern="\w\d\w \d\w\d" data-charset="_X_ X_X" 
+  title="6-character alphanumeric zip code in the format of A1A 1A1">
+&lt;/li>
+&lt;li>
+  &lt;label for="tel">Telephone&lt;/label>
+  &lt;input id="tel" type="tel" name="phone"  class="masked"
+  placeholder="(XXX) XXX-XXXX" pattern="\(\d{3}\) \d{3}\-\d{4}" title="10-digit number">
+&lt;/li>
+&lt;li>
+  &lt;label for="cc">Credit Card Number&lt;/label>
+  &lt;input id="cc" type="tel" name="ccnumber"  class="masked"
+  placeholder="XXXX XXXX XXXX XXXX" pattern="\d{4} \d{4} \d{4} \d{4}" title="16-digit number">
+&lt;/li>
+&lt;/ul></pre>
+<a href="https://github.com/estelle/input-masking/" class="pagelink">Input Masking README.md</a>
+</div>
+
+
+
+<div class="slide">
+  <div class="content">
+<pre contenteditable  class="visualfade">&lt;li>
+  &lt;label for="zip">Zip Code&lt;/label>
+  <b>&lt;input id="zip" type="tel" name="zipcode" class="masked" 
+  placeholder="XXXXX" pattern="\d{5}" title="5-digit zip code"></b>
+&lt;/li></pre>
+<p>add magical JavaScript sprinkle sauce</p>
+<pre contenteditable  class="visualfade">&lt;li>
+  &lt;label for="zip">Zip Code&lt;/label>
+  <b>&lt;span class="shell">
+    &lt;span aria-hidden="true" id="zipMask"><u>&lt;i>&lt;/i>XXXXX</u>&lt;/span></b>
+    &lt;input id="zip" type="tel" name="zipcode" pattern="\d{5}" 
+    class="masked" title="5-digit zip code" maxlength="5" 
+    placeholder="XXXXX" <b>aria-label="Zip Code: 5-digit zip code"</b>>
+  <b>&lt;/span></b>
+&lt;/li></pre>
+</div>
+</div>
+
+<div class="slide">
+  <header><h1>The magical sauce</h1></header>
+  <div class="content" style="padding-top: 30px;">
+<pre contenteditable  class="visualfade">&lt;span aria-hidden="true" id="zipMask"><b>&lt;i>&lt;/i>XXXXX</b>&lt;/span></pre>
+
+<p>on data entry...<span style="position: relative; top: -0.5em;display: inline-block; background-color: rgba(0, 0, 255,  0.1);font-size: 1em; width: 5em;"><i style=" background-color: rgba( 255,0,0,  0.1)">123</i>XX<input value="123" style="position: absolute; top: 50%; left: 0; font-size: 1em; background: rgba(0,255,0,0.1); width: 5em;"></span>&nbsp;&nbsp;<span style="position: relative; display: inline-block; background-color: rgba(0, 0, 255,  0.1);font-size: 1em; width: 5em;"><i style=" background-color: rgba( 255,0,0,  0.1); opacity: 0.3">123</i>XX<input value="123" style="position: absolute; top: 0; left: 0; font-size: 1em; background: rgba(0,255,0,0.1); width: 5em;"></span></p>
+
+<pre contenteditable   class="visualfade">&lt;span aria-hidden="true" id="zipMask"><b>&lt;i>123&lt;/i>XX</b>&lt;/span></pre>
+
+<p style="text-align: right; font-size: 1rem"><a href="https://github.com/estelle/input-masking">Github Repo &raquo;</a> &nbsp;</p>
+</div></div>
+
+
+
+<div class="slide">
+<header><h1>Style the Masking</h1></header>
+<pre contenteditable  class="visualfade">.shell { position: relative; line-height: 1; }
+  <b>.shell span</b> {
+    position: absolute; left: 3px; top: 1px;
+    color: $themeColor;
+    pointer-events: none;
+    z-index: -1; }
+    <b>.shell span i </b>{ /* any of these 3 will work */
+<b>      color: transparent;
+      opacity: 0;
+      visibility: hidden; </b>
+      }
+
+.shell span, input.masked { /* make them match */
+ <b> background-color: transparent;</b>
+  font-size: 16px; font-family: monospace; padding-right: 10px; text-transform: uppercase; }
+
+/* hide placeholder */
+.shell .masked<b>::-webkit-input-placeholder</b> {color: transparent;}
+.shell .masked<b>::-moz-placeholder</b> {color: transparent;}
+.shell .masked<b>:-ms-input-placeholder</b> {color: transparent;}
+.shell .masked<b>::placeholder { color: transparent;}</b>
+  </pre></div>
+
+<div class="slide myquote">
+  <header><h1>CSS and Semantic HTML</h1></header>
+  <div class="content">
+<blockquote>Changing the layout changes the semantics:</blockquote>
+<pre>table {
+  display: grid;
+}</pre>
+<blockquote>is no longer read as a table by screen readers.</blockquote>
+  </div>
+</div>
+
+
+<div class="slide object">
+<object data="https://codepen.io/estelle/full/BYvLYp/"></object>
+
+<a href="https://codepen.io/estelle/full/BYvLYp/" class="pagelink">Codepen.io</a>
+</div>
+
+
+<div class="slide thinkoutsidebox intro">
+  <div class="box">
+    <p aria-label="think outside the box">think</p>
+  </div>  
+</div>
+
+<div class="slide scaffolding"><section>
+<span class="photocredit" aria-label="Image of bay bridge's scaffolding by Kenneth Lu">Photo: <a href="https://www.flickr.com/photos/toasty/">Kenneth Lu</a></span></section>
+</div>
+
+
+<div class="slide object">
+<object data="https://w3c.github.io/using-aria/"></object>
+<a href="https://w3c.github.io/using-aria/" class="pagelink">WAI-ARIA</a>
+</div>
+
+ 
+
+<div class="slide resources">
+  <header><h1>Resources</h1></header>
+  <section class="content">
+  <p>Accessibility</p>
+    <ul>
+    <li><a href="https://webaim.org/resources/">Web AIM Resource List</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA">MDN List of ARIA Resources</a></li>
+    </ul>
+  <p>Performance</p>
+    <ul>
+    <li><a href="https://www.webpagetest.org/">www.WebPageTest.org</a></li>
+    <li><a href="https://perf.rocks/">Perf.Rocks</a></li>
+    <li><a href="https://perfmattersconf.com">PerfMattersConf.com</a></li>
+    </ul>
+  <p>Github Repos</p>
+  <ul>
+    <li>Input Masking: <a href="https://github.com/estelle/input-masking">https://github.com/estelle/input-masking</a></li>
+    <li>Merry-go-round: <a href="https://github.com/estelle/merry-go-round">https://github.com/estelle/merry-go-round</a></li>
+    <li>Drop-down/Select: No repo needed!</li>
+    </ul>
+  </section>
+</div>
+
+
+
+
+<!-- MDN -->
+<div class="slide object" style="background: url(assets/images/mdna11y.png) no-repeat center 0;  background-size: cover;">
+<object data="https://developer.mozilla.org/en-US/"></object>
+ 
+<a href="https://developer.mozilla.org/en-US/" class="pagelink">MDN</a>
+</div>
+
+<div class="slide">
+<section class="content">
+<h1>Estelle Weyl</h1>
+<h2><a href="http://www.standardista.com">www.standardista.com</a></h2><h2><a href="https://www.twitter.com/estellevw">@estellevw</a><br><a href="https://www.twitter.com/standardista">@standardista</a></h2>
+<div class="floatright">
+  <img src="https://akamaicovers.oreilly.com/images/9780987467485/cat.gif" alt="HTML5 and CSS3 for the Real World">
+  <img src="https://akamaicovers.oreilly.com/images/0636920041658/cat.gif" alt="Animations and Transitions with CSS"/>
+  <img src="https://akamaicovers.oreilly.com/images/0636920021711/cat.gif" alt="MObile HTML5" />
+  <img src="https://akamaicovers.oreilly.com/images/0636920025955/cat.gif" alt="Web Performance Daybook"/>
+  <img src="https://covers.oreillystatic.com/images/0636920066682/cat.gif" alt="Flexbox in CSS"/>
+  <img src="https://covers.oreillystatic.com/images/0636920012726/cat.gif" alt="CSS: The Definitive Guide">
+</div>
+</section>
+</div>
+
+ 
+
+   </div>
+</div>
+<script src="js/slides.js" class="removeForAT"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+@chartset "utf-8";
+
+$background: #ffffff;
+$color: #333333;
+$themecolor: slateblue;
+
+@import "layout";
+@import "slidedisplay";
+@import "slides";
+@import "objects";
+@import "buttons";
+@import "content";
+@import "pre";
+@import "externallink";
+@import "radiobuttoncontent";
+@import "print";
