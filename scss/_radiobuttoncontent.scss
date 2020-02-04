@@ -1,6 +1,23 @@
 .picksome {
-    list-stype-type: none;
-    [type=checkbox] {
-        
+    li{ 
+        list-style-type: none;
+    }
+    span {
+        color: $themecolor;
+        float: right;
+    }
+    [type=checkbox]:not(:checked) + label span { 
+        display: none;
+    }
+}
+.intro > h1 {
+    font-size: 3rem;
+    color: $themecolor;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    strong {
+        box-shadow: 0 0 30px -10px currentColor;
     }
 }

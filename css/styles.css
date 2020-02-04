@@ -53,7 +53,6 @@ body,
   left: 0;
   box-sizing: border-box;
   padding: 20px;
-  transition: all 0.25s ease-in-out;
 }
 
 /* OBJECT PAGES */
@@ -148,7 +147,7 @@ a {
   display: inline-block;
   text-decoration: none;
   line-height: 110%;
-  color: slateblue;
+  color: darkgreen;
 }
 
 a:hover {
@@ -183,7 +182,7 @@ button {
   margin-top: 200px;
 }
 .slide.intro header h1 {
-  color: slateblue;
+  color: darkgreen;
   padding: 40px 0;
   letter-spacing: 0.25px;
 }
@@ -250,7 +249,7 @@ pre {
 pre b, pre em {
   font-weight: normal;
   font-style: normal;
-  color: slateblue;
+  color: darkgreen;
   font-weight: bold;
   transition: 200ms;
 }
@@ -269,7 +268,7 @@ a.pagelink {
   top: 5px;
   right: 5px;
   color: #FFF;
-  background-color: slateblue;
+  background-color: darkgreen;
   padding: 3px 5px 3px 5px;
   border: none;
   color: #ffffff;
@@ -281,9 +280,29 @@ a.pagelink::after {
   padding-left: 5px;
 }
 
-.picksome {
-  list-stype-type: none;
+.picksome li {
+  list-style-type: none;
 }
+.picksome span {
+  color: darkgreen;
+  float: right;
+}
+.picksome [type=checkbox]:not(:checked) + label span {
+  display: none;
+}
+
+.intro > h1 {
+  font-size: 3rem;
+  color: darkgreen;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+.intro > h1 strong {
+  box-shadow: 0 0 30px -10px currentColor;
+}
+
 @media print {
   .slide {
     page-break-inside: avoid;
