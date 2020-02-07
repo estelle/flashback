@@ -8,7 +8,8 @@ Made by: Estelle Weyl
 Copyright:  CC-SA-NC-BY - Creative Commons Attribution-NonCommercial-ShareAlike
 Based on: https://estelle.github.com/slides 
 -->    
-<link rel="stylesheet"  class="removeForAT" href="css/styles.css">
+<link rel="stylesheet"  class="removeForAT" href="css/visual.css">
+<link rel="stylesheet"  href="css/styles.css">
 <style>
 </style> 
 <base target="play"/>
@@ -30,14 +31,14 @@ Based on: https://estelle.github.com/slides
       <p><a href="https://estelle.github.io/radiobutton/
 ">https://estelle.github.io/radiobutton/</a></p>
 
-      <button type="button" id="killCSS" class="skiplink">Enable Screen Reader Access</button>
+      <button type="button" id="killCSS" class="skiplink">Make Vertical</button>
     </section>
   </div>
 
 
 <div class="slide">
   <header><h1>2011</h1></header>
-  <div class="content visualfade">
+  <div class="content">
       <pre contenteditable>&lt;script src="<b>jquery.js</b>"&gt;&lt;/script&gt;
           
 &lt;script type="text/javascript"&gt; 
@@ -198,20 +199,637 @@ Based on: https://estelle.github.com/slides
 
 
   <div class="slide intro">
-    <h1><span><strong>HTML is 
-      <b style="position: absolute; transform: translate(-50%, -1.1em) rotate(-9deg);">basically</b>
-        <i style="position: absolute; transform: translate(-80%, 0.8em)">^</i> Free</strong></span></h1>
-   </div>
-   
-
-
-  <div class="slide intro">
     <h1><span>HTML is by default <strong>accessible</strong>.<br/> It is our job as developers<br/> to not fuck that up.</span></h1>
 </div>
 
 <div class="slide intro">
     <h1><span>HTML is by default <strong>fast</strong>.<br/> It is our job as developers <br/>to not fuck that up.</span></h1>
 </div>
+
+
+<div class="slide intro">
+  <h1><span><strong>HTML is Free</strong></span></h1>
+ </div>
+ 
+
+
+ <div class="slide intro">
+   <h1><span><strong>HTML is 
+     <b style="position: absolute; transform: translate(-50%, -1.1em) rotate(-9deg);">basically</b>
+       <i style="position: absolute; transform: translate(-80%, 0.8em)">^</i> Free</strong></span></h1>
+  </div>
+
+ 
+ 
+   <div class="slide intro">
+     <h1 style="padding-top: 1.75rem"><span><strong>HTML is 
+       <b style="position: absolute; transform: translate(-50%, -1.1em) rotate(-9deg);">basically</b>
+         <i style="position: absolute; transform: translate(-80%, 0.8em)">^</i> Free</strong><br/> and is amazing!</span></h1>
+    </div>
+    
+ 
+<!-- divider -->
+
+<div class="slide intro">
+  <h1>Accessibility</h1>
+  </div>
+  
+  
+  
+  <!-- slide -->
+  <div class="slide blind">
+  <h1>Screen Reader experience</h1>
+  <p>
+    <a href=""  aria-label="don't click this link. It's a example fo bad user experience. 
+    The screen displays the words 'click here' moving about the page, as is
+    the experience when you navigate through links without meaningful content.">click here</a>
+  </p>
+  </div>
+  
+  
+  <!-- Slide -->
+  <div class="slide object">
+  
+  <h1>Hearing impaired experience</h1>
+  
+  <object data="http://popular-vines.com/miss-piggy-finds-kermit-the-frog-on-tinder/"></object>
+  <a href="https://vine.co/v/eaKw7953pij/embed/simple" class="pagelink">Vine</a>
+  </div>
+  
+
+    <!-- Slide 
+    <div class="slide object">
+  
+      <h1>Hearing impaired experience</h1>
+      
+
+  <iframe src="https://vine.co/v/eaKw7953pij/embed/simple" width="600" height="600" frameborder="0"></iframe><script src="https://platform.vine.co/static/scripts/embed.js"></script>
+    </video>
+    </section>
+  </div>
+  
+  <!-- slide -->
+  <div class="slide deaf colorblind" style="background-image: url(assets/images/colors.jpg)">
+  <h1>Color Blindness experience</h1>
+  </div>
+  
+  
+  <!-- slide -->
+     <div class="slide tweet" style="text-align: center; padding-top: 40px;"> 
+  <a href="https://twitter.com/dugboticus/status/720542337185771520"><img alt="Disability: a mismatch in interaction between the features of a person’s body and the features of the environment in which they live. &mdash; Alistair Duggin (@dugboticus) April 14, 2016" src="assets/images/tweetdisability.png"></a>
+  </div>
+  
+  
+  <div class="slide graph svg">
+  <header><h1>We all benefit from the <abbr title="Americans with Disabilities Act">ADA</abbr></h1></header>
+    
+  <ul class="">
+    <li><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 96 120" enable-background="new 0 0 96 96" xml:space="preserve"><path d="M90,79h-8V49c0-1.1-0.9-2-2-2h-7.408c-1.424-4.4-3.699-8.416-6.619-11.86C65.973,35.092,66,35.052,66,35V17c0-1.1-0.9-2-2-2  H26V5c0-1.1-0.896-2-2-2h-6c-1.104,0-2,0.9-2,2s0.896,2,2,2h4v20c0,0.056,0.028,0.1,0.032,0.156C11.288,33.18,4,44.668,4,57.836  C4,77.229,19.772,93,39.16,93c19.388,0,35.164-15.771,35.164-35.164c0-2.34-0.248-4.624-0.68-6.836H78v30c0,1.1,0.9,2,2,2h10  c1.104,0,2-0.9,2-2S91.1,79,90,79z M26,19h36v12.156c-6.152-5.272-14.12-8.48-22.84-8.48c-4.656,0-9.088,0.924-13.16,2.584V19z   M39.16,63.836c-3.308,0-5.996-2.691-5.996-6s2.688-6,5.996-6c3.312,0,6.004,2.691,6.004,6S42.472,63.836,39.16,63.836z"></path><path d="M41.16,57.836c0,1.105-0.895,2-2,2s-2-0.895-2-2s0.895-2,2-2S41.16,56.73,41.16,57.836z"></path><text x="0" y="111" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">Created by iconsmind.com</text><text x="0" y="116" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">from the Noun Project</text></svg></li>
+    <li>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 96 120" enable-background="new 0 0 96 96" xml:space="preserve"><path d="M44.988,63h20c15.863,0,28.836-12.393,29.871-28H15.12C16.16,50.604,29.124,63,44.988,63z"></path><path d="M12.156,31h5.66L4.528,17.712c-0.78-0.776-2.048-0.776-2.828,0c-0.78,0.78-0.78,2.048,0,2.828L12.156,31z"></path><path d="M64.988,3h-12c-1.104,0-2,0.896-2,2v26h43.896C93.844,15.392,80.855,3,64.988,3z"></path><path d="M78.652,65c-7.721,0-14,6.28-14,14c0,7.721,6.279,14,14,14c7.72,0,14-6.279,14-14C92.652,71.28,86.372,65,78.652,65z"></path><path d="M34.652,65c-7.72,0-14,6.28-14,14c0,7.721,6.28,14,14,14c7.72,0,14-6.279,14-14C48.652,71.28,42.372,65,34.652,65z"></path></svg>
+    </li>
+    <li>
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 96 120" enable-background="new 0 0 96 96" xml:space="preserve"><path d="M10.74,62.676l48.084-48.084l-3.816-3.82c-3.832-3.836-11.72-3.272-15.836,0.844L7.388,43.4  c-4.24,4.244-4.46,11.464-0.464,15.456L10.74,62.676z"></path><path d="M91.352,18.836l-4.244-4.244c-0.779-0.78-2.051-0.78-2.828,0c-0.779,0.776-0.779,2.048,0,2.828l2.828,2.828L75.788,31.56  L61.652,17.42L13.568,65.504l6.108,6.104c0.392,0.393,0.904,0.584,1.416,0.584c0.512,0,1.024-0.195,1.416-0.584  c4.852-4.852,11.852-5.084,16.504-0.432c0.752,0.752,2.08,0.752,2.828,0l49.516-49.512c0.377-0.376,0.584-0.884,0.584-1.416  S91.729,19.212,91.352,18.836z"></path><path d="M24.848,73.027c-3.372,3.381-3.368,8.873,0.004,12.248c1.636,1.633,3.808,2.537,6.12,2.537c2.316,0,4.488-0.904,6.124-2.541  c3.372-3.371,3.372-8.863,0-12.248C33.82,69.752,28.116,69.752,24.848,73.027z"></path></svg>
+    </li>
+    </ul>
+  </div>
+  
+  <div class="slide graph">
+  <header><h1>Disability is a spectrum</h1></header>
+  <div class="arrow" style="margin-top: 30px">
+      <div>permanent</div>
+      <div class="border"><span>Temporary</span></div>
+      <div>situational</div>
+    </div>
+  <ul>
+    <li>Parapalegic</li>
+    <li>Broken Leg</li>
+    <li>Stillettos</li>
+  </ul>
+  
+  <ul>
+    <li>Blind</li>
+    <li>Reading Glasses</li>
+    <li>Sun Glare</li>
+  </ul>
+  <ul>
+    <li>Dyslexic</li>
+    <li>Medicated</li>
+    <li>Distracted</li>
+  </ul>
+  
+  <ul>
+    <li>Quadrapalegic</li>
+    <li>Broken Arm</li>
+    <li>Holding a Baby</li>
+  </ul>
+  
+  <ul>
+    <li>Hard of Hearing</li>
+    <li>Aircraft Marshaller</li>
+    <li>Forgotten Headphones</li>
+  </ul>
+  
+  
+    <div class="arrow">
+      <div>permanent</div>
+      <div class="border"><span>Temporary</span></div>
+      <div>situational</div>
+    </div>
+  </div>
+  
+  
+  <div class="slide">
+    <div class="content">
+    <fieldset style="width: 75%; margin: auto"><legend>Accessibility is:</legend>
+  
+      <ul style="list-style-type: none">
+        <li><input id="rb01" type="radio" name="a11y" value="important"> <label for="rb01">important</label></li>
+        <li><input id="rb02" type="radio" name="a11y" value="useful"> <label for="rb02">useful</label></li>
+        <li><input id="rb04" type="radio" name="a11y" value="helpful"> <label for="rb04">helpful for everyone</label></li>
+        <li><input id="rb05" type="radio" name="a11y" value="the right thing to do"> <label for="rb05">the right thing to do</label></li>
+        <li><input id="rb06" type="radio" name="a11y" value="simple"> <label for="rb06">simple</label></li>
+        <li><input id="rb03" type="radio" name="a11y" value="required"> <label for="rb03">required</label></li>
+        <li><input id="rb07" type="radio" name="a11y" value="all"> <label for="rb07">All of the above</label></li>
+  
+    </fieldset>
+    </div>
+  </div>
+  
+  <div class="slide intro">
+  <h1 class="aria"><span style="text-align: left;"><i>A</i>ccessible<br/>
+  <i>R</i>ich<br/>
+  <i>I</i>nternet <br/>
+  <i>A</i>pplications</span></h1>
+  </div>
+  
+  
+  
+  
+  <div class="slide intro">
+    <h1><span>The 1st rule of ARIA use is if you can use a native HTML element or 
+      attribute with the semantics behavior already built in, <br/>do that instead!</span></h1>
+  
+  </div>
+  
+
+  <div class="slide">
+    <header><h1>&nbsp;</h1></header>
+    <div class="content">
+  <form>
+    <fieldset style="width: 75%; margin: auto"><legend>Accessibility is:</legend>
+  
+      <ul style="list-style-type: none">
+        <li><input id="rb1" type="radio" name="a11y" value="important"> <label for="rb1">important</label></li>
+        <li><input id="rb2" type="radio" name="a11y" value="useful"> <label for="rb2">useful</label></li>
+        <li><input id="rb4" type="radio" name="a11y" value="helpful"> <label for="rb4">helpful for everyone</label></li>
+        <li><input id="rb5" type="radio" name="a11y" value="the right thing to do"> <label for="rb5">the right thing to do</label></li>
+        <li><input id="rb6" type="radio" name="a11y" value="simple"> <label for="rb6">simple</label></li>
+        <li><input id="rb3" type="radio" name="a11y" value="required"> <label for="rb3">required</label></li>
+        <li><input id="rb7" type="radio" name="a11y" value="all"> <label for="rb7">All of the above</label></li>
+  
+    </fieldset>
+  <input type="submit" value="Submit">
+  </form>
+    </div>
+  </div>
+
+
+<div class="slide">
+  <header><h1>&nbsp;</h1></header>
+  <section class="content">
+    <form>
+  <fieldset style="width: 75%; margin: auto"><legend>Radio Buttons are:</legend>
+
+    <ul style="list-style-type: none">
+      <li><input id="rbb1" type="radio" name="buttons" value="important"> <label for="rbb1">by default accessible</label></li>
+      <li><input id="rbb2" type="radio" name="buttons" value="useful"> <label for="rbb2">super useful</label></li>
+      <li><input id="rbb3" type="radio" name="buttons" value="required"> <label for="rbb3">natively navigable</label></li>
+      <li><input id="rbb4" type="radio" name="buttons" value="helpful"> <label for="rbb4">supported in all browsers</label></li>
+      <li><input id="rbb5" type="radio" name="buttons" value="the right thing to do"> <label for="rbb5">semantic</label></li>
+      <li><input id="rbb6" type="radio" name="buttons" value="simple"> <label for="rbb6">easy to implement</label></li>
+      <li><input id="rbb8" type="radio" name="buttons" value="old"> <label for="rbb6">25+ years old</label></li>
+      <li><input id="rbb7" type="radio" name="buttons" value="all"> <label for="rbb7">All of the above</label></li>
+
+  </ul></fieldset>
+
+  <input type="submit" value="Submit">
+</form>
+  </div>
+
+
+<div class="slide object">
+  <object data="https://www.w3.org/MarkUp/1995-archive/Elements/INPUT.html"></object>
+
+  <a href="https://www.w3.org/MarkUp/1995-archive/Elements/INPUT.html" class="pagelink">Spec</a>
+</div>
+
+
+<div class="slide object">
+  <object data="https://www.w3.org/MarkUp/HTMLPlus/htmlplus_41.html"></object>
+  <a href="https://www.w3.org/MarkUp/HTMLPlus/htmlplus_41.html" class="pagelink">original proposal</a>
+</div>
+
+
+
+<div class="slide">
+<header><h1>&lt;input&gt; types</h1></header>
+<section class="history">
+<div>
+  <h1> HTML 2</h1>
+<ul>
+      <li>checkbox</li>
+      <li>hidden</li>
+      <li>image</li>
+      <li>password</li>
+      <li><b>radio</b></li>
+      <li>reset</li>
+      <li>submit</li>
+      <li>text</li>
+  </ul>
+</div>
+<div>
+  <h1> HTML 3.2</h1>
+<ul>
+  <li>file</li>
+</ul>
+
+<h1> HTML 4</h1>
+<ul>
+  <li>button</li>
+</ul>
+</div>
+<div>
+  <h1> HTML 5 </h1>
+  <ul>
+      <li>email </li>
+      <li>url</li>
+      <li>search</li>
+      <li>tel</li>
+      <li>number</li>
+      <li>range</li>
+      <li>date </li>
+      <li>time</li>
+      <li>color</li>
+      <li>datetime-local </li>
+      <li>week</li>
+      <li>month</li>
+</ul>
+</div>
+</section></div>
+
+<div class="slide">
+  <header><h1>Form related elements</h1></header>
+  <section class="history">
+  <div>
+    <h1> HTML 2</h1>
+  <ul>
+
+    <li>&lt;form&gt;</li>
+    <li>&lt;input&gt;
+  <ul>
+        <li>checkbox</li>
+        <li>hidden</li>
+        <li>image</li>
+        <li>password</li>
+        <li><b>radio</b></li>
+        <li>reset</li>
+        <li>submit</li>
+        <li>text</li>
+    </ul>
+  </li>
+
+  <li>&lt;select&gt;</li>
+  <li>&lt;textarea&gt;</li>
+  <li>&lt;option&gt;</li></ul>
+  </div>
+  <div>
+    <h1><a href="https://www.w3.org/TR/2018/SPSD-html32-20180315/">HTML 3.2</a></h1>
+  <ul>
+    <li>file</li>
+  </ul>
+  
+  <h1><a href="https://www.w3.org/TR/1998/REC-html40-19980424/">HTML 4</a></h1>
+  <ul>
+    <li>&lt;button&gt;</li>
+    <li>&lt;fieldset&gt;</li>
+    <li>&lt;input&gt;
+      <ul>    
+        <li>button</li>
+      </ul>
+    </li>
+    <li>&lt;fieldset&gt;</li>
+    <li>&lt;label&gt;</li>
+    <li>&lt;legend&gt;</li>
+    <li>&lt;optgroup&gt;</li>
+    </ul>
+  </div>
+  <div>
+    <h1> HTML 5 </h1>
+    <ul>
+    <li>&lt;input&gt;
+      <ul> 
+        <li>email </li>
+        <li>url</li>
+        <li>search</li>
+        <li>tel</li>
+        <li>number</li>
+        <li>range</li>
+        <li>date </li>
+        <li>time</li>
+        <li>color</li>
+        <li>datetime-local </li>
+        <li>week</li>
+        <li>month</li>
+      </ul>
+    </li>
+    <li>&lt;meter&gt;</li>
+    <li>&lt;output&gt;</li>
+    <li>&lt;progress&gt;</li>
+    </ul>
+  </div>
+  </section></div>
+  
+
+
+
+<div class="slide">
+  <header><h1>Markup</h1></header>
+  <section class="content">
+  <pre contenteditable style="
+    font-size: 0.5rem;
+    background-size: 1rem 1.04rem;
+    background-position: 0 0.5rem;">&lt;form method="" action=""&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;Radio Buttons are:&lt;/legend&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;input id="rbb1" type="radio" name="buttons" value="important"&gt; 
+        &lt;label for="rbb1"&gt;by default accessible&lt;/label&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;input id="rbb2" type="radio" name="buttons" value="useful"&gt; 
+        &lt;label for="rbb2"&gt;super useful&lt;/label&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;input id="rbb3" type="radio" name="buttons" value="required"&gt; 
+        &lt;label for="rbb3"&gt;natively navigable&lt;/label&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;input id="rbb4" type="radio" name="buttons" value="helpful"&gt; 
+        &lt;label for="rbb4"&gt;supported in all browsers&lt;/label&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;input id="rbb5" type="radio" name="buttons" value="the right thing to do"&gt; 
+        &lt;label for="rbb5"&gt;semantic&lt;/label&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;input id="rbb6" type="radio" name="buttons" value="simple"&gt; 
+        &lt;label for="rbb6"&gt;easy to implement&lt;/label&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;input id="rbb7" type="radio" name="buttons" value="all"&gt; 
+        &lt;label for="rbb7"&gt;All of the above&lt;/label&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/fieldset&gt;
+  
+  &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt; </pre>
+  <small>*dont worry if you can read this yet.</small> 
+  </section>
+</div>
+
+
+
+
+
+<div class="slide">
+  <header><h1>Markup - &lt;form&gt;</h1></header>
+  <section class="content">
+  <pre contenteditable><b>&lt;form method="" action=""&gt;
+&lt;/form&gt;</b> </pre>
+
+  </section>
+</div>
+
+
+<div class="slide">
+  <header><h1>Markup - &lt;form&gt;</h1></header>
+  <section class="content">
+  <pre contenteditable>&lt;form <b>method="POST" action="#formid"</b>&gt;
+&lt;/form&gt; </pre>
+<dl>
+  <dt>method</dt>
+  <dd></dd>
+  <dt>action</dt>
+  <dd>
+  </dd>
+</dl>
+  </section>
+</div>
+
+<div class="slide">
+  <header><h1>Markup - &lt;fieldset&gt;</h1></header>
+  <section class="content">
+  <pre contenteditable>&lt;form method="POST" action="#formid"&gt;
+  <b>&lt;fieldset&gt;
+  &lt;/fieldset&gt;</b>
+&lt;/form&gt; </pre>
+  </section>
+</div>
+
+<div class="slide">
+  <header><h1>Markup - &lt;fieldset&gt;</h1></header>
+  <section class="content">
+  <pre contenteditable>&lt;form method="POST" action="#formid"&gt;
+  <b>&lt;fieldset&gt;
+  &lt;/fieldset&gt;</b>
+&lt;/form&gt; </pre>
+<dl>
+  <dt>&lt;fieldset&gt;</dt>
+  <dd></dd>
+  </dl>
+  </section>
+</div>
+
+
+
+<div class="slide">
+  <header><h1>Markup - &lt;legend&gt;</h1></header>
+  <section class="content">
+  <pre contenteditable>&lt;form method="POST" action="#formid"&gt;
+  &lt;fieldset&gt;
+    <b>&lt;legend&gt;&lt;/legend&gt;</b>
+  &lt;/fieldset&gt;
+  &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt; </pre>
+  </section>
+</div>
+
+
+<div class="slide">
+  <header><h1>Markup - &lt;legend&gt;</h1></header>
+  <section class="content">
+  <pre contenteditable>&lt;form method="POST" action="#formid"&gt;
+  &lt;fieldset&gt;
+    <b>&lt;legend&gt;Radio Buttons are:&lt;/legend&gt;</b>
+  &lt;/fieldset&gt;
+  &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt; </pre>
+<dl>
+  <dt>&lt;legend&gt;</dt>
+  <dd></dd>
+  </dl>
+  </section>
+</div>
+
+
+<div class="slide">
+  <header><h1>Markup - &lt;input type="submit"&gt;</h1></header>
+  <section class="content">
+  <pre contenteditable>&lt;form method="POST" action="#formid"&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;Radio Buttons are:&lt;/legend&gt;
+  &lt;/fieldset&gt;
+  <b>&lt;input type="submit" value="Submit"&gt;</b>
+&lt;/form&gt; </pre>
+<dl>
+  <dt>&lt;input&gt; buttons</dt>
+  <dd>
+    <ul>
+      <li>submit</li>
+      <li>button</li>
+      <li>reset</li>
+      <li>image</li>
+    </ul>
+  </dd>
+  <dt>&lt;button&gt; buttons</dt>
+  <dd>
+    <ul>
+      <li>submit</li>
+      <li>button</li>
+      <li>reset</li>
+    </ul>
+  </dd>
+</dl>
+  </section>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="slide">
+  <header><h1>Markup - &lt;input type="radio"&gt;</h1></header>
+  <section class="content">
+  <pre contenteditable>&lt;form method="POST" action="#formid"&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;Radio Buttons are:&lt;/legend&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;input id="rbb1" type="radio" name="buttons" value="important"&gt; 
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;input id="rbb2" type="radio" name="buttons" value="useful"&gt; 
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;input id="rbb3" type="radio" name="buttons" value="required"&gt; 
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/fieldset&gt;
+  
+  &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt; </pre>
+  </section>
+</div>
+
+
+
+
+
+
+<div class="slide">
+  <header><h1>Markup - &lt;label&gt;</h1></header>
+  <section class="content">
+  <pre contenteditable>&lt;form method="" action=""&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;Radio Buttons are:&lt;/legend&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;input id="rbb1" type="radio" name="buttons" value="important"&gt; 
+        &lt;label for="rbb1"&gt;by default accessible&lt;/label&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;input id="rbb2" type="radio" name="buttons" value="useful"&gt; 
+        &lt;label for="rbb2"&gt;super useful&lt;/label&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;input id="rbb3" type="radio" name="buttons" value="required"&gt; 
+        &lt;label for="rbb3"&gt;natively navigable&lt;/label&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/fieldset&gt;
+  &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt; </pre>
+  </section>
+</div>
+
+
+
+
+
+<div class="slide">
+  <header><h1>Markup - </h1></header>
+  <section class="content">
+  <pre contenteditable>&lt;form method="" action=""&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;Radio Buttons are:&lt;/legend&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;input id="rbb1" type="radio" name="buttons" value="important"&gt; 
+        &lt;label for="rbb1"&gt;by default accessible&lt;/label&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;input id="rbb2" type="radio" name="buttons" value="useful"&gt; 
+        &lt;label for="rbb2"&gt;super useful&lt;/label&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;input id="rbb3" type="radio" name="buttons" value="required"&gt; 
+        &lt;label for="rbb3"&gt;natively navigable&lt;/label&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;input id="rbb4" type="radio" name="buttons" value="helpful"&gt; 
+        &lt;label for="rbb4"&gt;supported in all browsers&lt;/label&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;input id="rbb5" type="radio" name="buttons" value="the right thing to do"&gt; 
+        &lt;label for="rbb5"&gt;semantic&lt;/label&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;input id="rbb6" type="radio" name="buttons" value="simple"&gt; 
+        &lt;label for="rbb6"&gt;easy to implement&lt;/label&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;input id="rbb7" type="radio" name="buttons" value="all"&gt; 
+        &lt;label for="rbb7"&gt;All of the above&lt;/label&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/fieldset&gt;
+  
+  &lt;input type="submit" value="Submit"&gt;
+  &lt;/form&gt; </pre>
+  <small>*dont worry if you can read this yet.</small> 
+  </section>
+</div>
+
+
+
 
 
 <div class="slide">
@@ -223,26 +841,6 @@ Based on: https://estelle.github.com/slides
 
 
 
-
-
-<div class="slide">
-  <div class="content"><label class="focusbot"><input type="text"> Get focus</label>
-<form>
-  <fieldset style="width: 75%; margin: auto"><legend>Radio Buttons are</legend>
-
-    <ul style="list-style-type: none">
-      <li><input id="rbb1" type="radio" name="a11y" value="important"> <label for="rbb1">by default accessible</label></li>
-      <li><input id="rbb2" type="radio" name="a11y" value="useful"> <label for="rbb2">super useful</label></li>
-      <li><input id="rbb3" type="radio" name="a11y" value="required"> <label for="rbb3">natively navigable</label></li>
-      <li><input id="rbb4" type="radio" name="a11y" value="helpful"> <label for="rbb4">supported in all browsers</label></li>
-      <li><input id="rbb5" type="radio" name="a11y" value="the right thing to do"> <label for="rbb5">semantic</label></li>
-      <li><input id="rbb6" type="radio" name="a11y" value="simple"> <label for="rbb6">easy to implement</label></li>
-      <li><input id="rbb7" type="radio" name="a11y" value="all"> <label for="rbb7">All of the above</label></li>
-
-  </fieldset></form>
-
-  </div>
-</div>
 
 
  

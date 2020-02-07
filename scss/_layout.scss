@@ -8,16 +8,10 @@ body {
   padding: 0;
   margin: 0;
 }
-body,
-#presentation, 
-.slides {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  right: 0;
-  bottom: 0;
+.slide, object {
+  min-height: 85vh;
 }
-#presentation {
-  display: block;
-  overflow: hidden;
+.slide {
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #aaa;
 }

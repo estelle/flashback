@@ -21,3 +21,12 @@
         box-shadow: 0 0 30px -10px currentColor;
     }
 }
+.history {
+    display: flex;
+    flex-wrap: wrap;
+    div {flex: 1;}
+}
+b {color: $themecolor;}
+@import "blind";
+@import "svg";
+@import "graph";
