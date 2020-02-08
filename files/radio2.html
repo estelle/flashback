@@ -1,0 +1,72 @@
+
+<style>.editme {
+  text-align: left;
+  font-size: 1.4em;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  text-shadow: none;
+  white-space: pre;
+  border: 1px solid #ccc;
+  font-family: monospace;
+  display: block;
+  margin-bottom: 1em;
+}
+body {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    text-shadow: rgba(0, 0, 0, 0.2) 0 2px 5px;
+    color: #333;
+}
+ul {
+    list-style-type: none; 
+}
+</style>
+
+<body>
+  
+  <fieldset>
+    <legend>Radio Buttons :</legend>
+        <ul>
+          <li><input id="rb1" type="radio" name="a11y2" value="accessible" required> </li>
+          <li><input id="rb2" type="radio" name="a11y2" value="useful"> </li>
+          <li><input id="rb4" type="radio" name="a11y2" value="helpful"> </li>
+          <li><input id="rb5" type="radio" name="a11y2" value="the right thing to do"> </li>
+          <li><input id="rb6" type="radio" name="a11y2" value="simple"> </li>
+          <li><input id="rb3" type="radio" name="a11y2" value="navigable"> </li>
+          <li><input id="rb7" type="radio" name="a11y2" value="all"></li>
+  </ul></fieldset>
+
+  <style class="editme" contenteditable="">/* the basic, unchecked style */
+input[type="radio"] {
+  -webkit-appearance: none;
+  display: inline-blvock;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  border: 0.25em solid #000;
+}
+/* if none are checked */
+[type="radio"]:focus  {
+  background: lightgreen;
+  border-color: white;
+  box-shadow: 0 0 0 3px black;
+}
+/* the checked style using the :checked pseudo class */
+[type="radio"]:checked  {
+  background: green;
+  border-color: white;
+  box-shadow: 0 0 0 3px black;
+}
+/* One radio button per line */
+label {
+  display: block;
+  cursor: pointer;
+  line-height: 2.5;
+  font-size: 1.5em;
+}
+
+
+</style>
+
+</body>
