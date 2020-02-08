@@ -24,12 +24,14 @@ ul {
 </style>
 
 <body>
-  <style class="editme" contenteditable="">Xfieldset {
-   border: none;
-   padding: 0;
-  }</style>
+  <style class="editme" contenteditable="">label {}
+[type=radio]:checked + label {
+  color: red;
+  font-weight: bold;
+}</style>
   <form method="POST" action="#formID">
   <fieldset>
+    <legend>Radio buttons are:</legend>
     <ul>
       <li>
         <input id="rbb1" type="radio" name="buttons" value="accessible"> 

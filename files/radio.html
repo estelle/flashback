@@ -1,0 +1,47 @@
+
+<style>.editme {
+  text-align: left;
+  font-size: 1.4em;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  text-shadow: none;
+  white-space: pre;
+  border: 1px solid #ccc;
+  font-family: monospace;
+  display: block;
+  margin-bottom: 1em;
+}
+body {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    text-shadow: rgba(0, 0, 0, 0.2) 0 2px 5px;
+    color: #333;
+}
+ul {
+    list-style-type: none; 
+}
+</style>
+
+<body>
+  
+  <fieldset>
+    <legend>Radio Buttons :</legend>
+        <ul>
+          <li><input id="rb1" type="radio" name="a11y2" value="accessible" required> </li>
+          <li><input id="rb2" type="radio" name="a11y2" value="useful"> </li>
+          <li><input id="rb4" type="radio" name="a11y2" value="helpful"> </li>
+          <li><input id="rb5" type="radio" name="a11y2" value="the right thing to do"> </li>
+          <li><input id="rb6" type="radio" name="a11y2" value="simple"> </li>
+          <li><input id="rb3" type="radio" name="a11y2" value="navigable"> </li>
+          <li><input id="rb7" type="radio" name="a11y2" value="all"></li>
+  </ul></fieldset>
+
+  <style class="editme" contenteditable="">.editme {margin-top: 15rem;} legend {margin-top: 2rem;}
+
+_ul {display: flex;}
+_[type=radio] {} 
+_:required { border: 1px solid red; -webkit-appearance: none; }
+_[type=radio]:checked { position: relative; top: -10px; }</style>
+
+</body>
