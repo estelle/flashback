@@ -26,7 +26,11 @@
     flex-wrap: wrap;
     div {flex: 1;}
 }
-b {color: $themecolor;}
+b, dt {
+    color: $themecolor;
+    font-weight: bold;
+}
+
 @import "blind";
 @import "svg";
 @import "graph";

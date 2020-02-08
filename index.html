@@ -341,7 +341,9 @@ Based on: https://estelle.github.com/slides
   
   
   <div class="slide">
+    <input role="presentation" aria-label="input purely to get focus.">
     <div class="content">
+      <form>
     <fieldset style="width: 75%; margin: auto"><legend>Accessibility is:</legend>
   
       <ul style="list-style-type: none">
@@ -353,7 +355,7 @@ Based on: https://estelle.github.com/slides
         <li><input id="rb03" type="radio" name="a11y" value="required"> <label for="rb03">required</label></li>
         <li><input id="rb07" type="radio" name="a11y" value="all"> <label for="rb07">All of the above</label></li>
   
-    </fieldset>
+    </fieldset></form>
     </div>
   </div>
   
@@ -375,20 +377,20 @@ Based on: https://estelle.github.com/slides
   
 
   <div class="slide">
-    <header><h1>&nbsp;</h1></header>
+    <header><h1>&nbsp;<input role="presentation" aria-label="input purely to get focus."></h1></header>
     <div class="content">
   <form>
     <fieldset style="width: 75%; margin: auto"><legend>Accessibility is:</legend>
   
       <ul style="list-style-type: none">
-        <li><input id="rb1" type="radio" name="a11y" value="important"> <label for="rb1">important</label></li>
-        <li><input id="rb2" type="radio" name="a11y" value="useful"> <label for="rb2">useful</label></li>
-        <li><input id="rb4" type="radio" name="a11y" value="helpful"> <label for="rb4">helpful for everyone</label></li>
-        <li><input id="rb5" type="radio" name="a11y" value="the right thing to do"> <label for="rb5">the right thing to do</label></li>
-        <li><input id="rb6" type="radio" name="a11y" value="simple"> <label for="rb6">simple</label></li>
-        <li><input id="rb3" type="radio" name="a11y" value="required"> <label for="rb3">required</label></li>
-        <li><input id="rb7" type="radio" name="a11y" value="all"> <label for="rb7">All of the above</label></li>
-  
+        <li><input id="rb1" type="radio" name="a11y2" value="important"> <label for="rb1">important</label></li>
+        <li><input id="rb2" type="radio" name="a11y2" value="useful"> <label for="rb2">useful</label></li>
+        <li><input id="rb4" type="radio" name="a11y2" value="helpful"> <label for="rb4">helpful for everyone</label></li>
+        <li><input id="rb5" type="radio" name="a11y2" value="the right thing to do"> <label for="rb5">the right thing to do</label></li>
+        <li><input id="rb6" type="radio" name="a11y2" value="simple"> <label for="rb6">simple</label></li>
+        <li><input id="rb3" type="radio" name="a11y2" value="required"> <label for="rb3">required</label></li>
+        <li><input id="rb7" type="radio" name="a11y2" value="all"> <label for="rb7">All of the above</label></li>
+  </ul>
     </fieldset>
   <input type="submit" value="Submit">
   </form>
@@ -483,7 +485,7 @@ Based on: https://estelle.github.com/slides
   <header><h1>Form related elements</h1></header>
   <section class="history">
   <div>
-    <h1> HTML 2</h1>
+    <h1><a href="https://www.w3.org/MarkUp/html-spec/html-spec_toc.html#SEC5.2.3">HTML 2</a></h1>
   <ul>
 
     <li>&lt;form&gt;</li>
@@ -606,7 +608,7 @@ Based on: https://estelle.github.com/slides
 
 
 <div class="slide">
-  <header><h1>Markup - &lt;form&gt;</h1></header>
+  <header><h1>Markup:  &lt;form&gt;</h1></header>
   <section class="content">
   <pre contenteditable><b>&lt;form method="" action=""&gt;
 &lt;/form&gt;</b> </pre>
@@ -616,22 +618,39 @@ Based on: https://estelle.github.com/slides
 
 
 <div class="slide">
-  <header><h1>Markup - &lt;form&gt;</h1></header>
+  <header><h1>Markup:  &lt;form&gt;</h1></header>
   <section class="content">
   <pre contenteditable>&lt;form <b>method="POST" action="#formid"</b>&gt;
 &lt;/form&gt; </pre>
 <dl>
   <dt>method</dt>
-  <dd></dd>
+  <dd>HTTP method to submit form: 
+    <ul>
+      <li>POST: data sent as request body)
+      </li>
+      <li>GET: data appended to action URL</li>
+    </ul>
+
+    
+    </dd>
   <dt>action</dt>
-  <dd>
+  <dd>URL that processes the form submission
   </dd>
 </dl>
+<p><small>overridden by formmethod and formaction attributes on &lt;button>, &lt;input type="submit">, or &lt;input type="image">
+</small></p>
+<small>Other attributes include: accept,
+  accept-charset,
+  autocomplete,
+  enctype,
+  name,
+  novalidate, and 
+  target</small>
   </section>
 </div>
 
 <div class="slide">
-  <header><h1>Markup - &lt;fieldset&gt;</h1></header>
+  <header><h1>Markup:  &lt;fieldset&gt;</h1></header>
   <section class="content">
   <pre contenteditable>&lt;form method="POST" action="#formid"&gt;
   <b>&lt;fieldset&gt;
@@ -641,7 +660,7 @@ Based on: https://estelle.github.com/slides
 </div>
 
 <div class="slide">
-  <header><h1>Markup - &lt;fieldset&gt;</h1></header>
+  <header><h1>Markup:  &lt;fieldset&gt;</h1></header>
   <section class="content">
   <pre contenteditable>&lt;form method="POST" action="#formid"&gt;
   <b>&lt;fieldset&gt;
@@ -649,15 +668,23 @@ Based on: https://estelle.github.com/slides
 &lt;/form&gt; </pre>
 <dl>
   <dt>&lt;fieldset&gt;</dt>
-  <dd></dd>
+  <dd>Used to group several form controls and their labels.</dd>
   </dl>
   </section>
 </div>
 
 
+<div class="slide object">
+  <object data="files/fieldset.html"></object>
+
+  <a href="files/fieldset.html" class="pagelink">Open</a>
+</div>
+
+
+
 
 <div class="slide">
-  <header><h1>Markup - &lt;legend&gt;</h1></header>
+  <header><h1>Markup:  &lt;legend&gt;</h1></header>
   <section class="content">
   <pre contenteditable>&lt;form method="POST" action="#formid"&gt;
   &lt;fieldset&gt;
@@ -670,7 +697,7 @@ Based on: https://estelle.github.com/slides
 
 
 <div class="slide">
-  <header><h1>Markup - &lt;legend&gt;</h1></header>
+  <header><h1>Markup:  &lt;legend&gt;</h1></header>
   <section class="content">
   <pre contenteditable>&lt;form method="POST" action="#formid"&gt;
   &lt;fieldset&gt;
@@ -686,8 +713,16 @@ Based on: https://estelle.github.com/slides
 </div>
 
 
+
+<div class="slide object">
+  <object data="files/legend.html"></object>
+
+  <a href="files/legend.html" class="pagelink">Open</a>
+</div>
+
+
 <div class="slide">
-  <header><h1>Markup - &lt;input type="submit"&gt;</h1></header>
+  <header><h1>Markup:  &lt;input type="submit"&gt;</h1></header>
   <section class="content">
   <pre contenteditable>&lt;form method="POST" action="#formid"&gt;
   &lt;fieldset&gt;
@@ -695,7 +730,7 @@ Based on: https://estelle.github.com/slides
   &lt;/fieldset&gt;
   <b>&lt;input type="submit" value="Submit"&gt;</b>
 &lt;/form&gt; </pre>
-<dl>
+<dl style="columns: 10em 2;">
   <dt>&lt;input&gt; buttons</dt>
   <dd>
     <ul>
@@ -726,7 +761,7 @@ Based on: https://estelle.github.com/slides
 
 
 <div class="slide">
-  <header><h1>Markup - &lt;input type="radio"&gt;</h1></header>
+  <header><h1>Markup:  &lt;input type="radio"&gt;</h1></header>
   <section class="content">
   <pre contenteditable>&lt;form method="POST" action="#formid"&gt;
   &lt;fieldset&gt;
@@ -751,27 +786,69 @@ Based on: https://estelle.github.com/slides
 
 
 
+<div class="slide">
+  <header><h1>Markup:  &lt;input type="radio"&gt;</h1></header>
+  <section class="content">
+  <pre contenteditable>&lt;input id="rbb1" 
+  type="radio" name="buttons" value="important"&gt; 
+
+&lt;input id="rbb2" 
+  type="radio" name="buttons" value="useful"&gt; 
+
+&lt;input id="rbb3" 
+  type="radio" name="buttons" value="required"&gt;</pre>
+  </section>
+</div>
+
+
+
+<div class="slide object">
+  <object data="https://www.w3.org/MarkUp/html-spec/html-spec_8.html#SEC8.1.2.4"></object>
+  <a href="https://www.w3.org/MarkUp/html-spec/html-spec_8.html#SEC8.1.2.4" class="pagelink">HTML2 spec</a>
+</div>
 
 
 
 <div class="slide">
-  <header><h1>Markup - &lt;label&gt;</h1></header>
+  <header><h1>Markup:  &lt;input type="radio"&gt;</h1></header>
   <section class="content">
-  <pre contenteditable>&lt;form method="" action=""&gt;
+  <pre contenteditable>&lt;input id="rbb1" 
+  type="radio" name="buttons" value="important"&gt; 
+
+&lt;input id="rbb2" 
+  type="radio" name="buttons" value="useful"&gt; 
+
+&lt;input id="rbb3" 
+  type="radio" name="buttons" value="required"&gt;</pre>
+  </section>
+  <ul><li>An INPUT element with `TYPE=RADIO' represents a boolean choice.</li>
+    <li>A set of such elements with the same name represents a 1-of-many choice field. </li>
+    <li>The NAME and VALUE attributes are required as for check boxes. </li>
+    </ul>
+  </p>
+</div>
+
+
+
+
+<div class="slide">
+  <header><h1>Markup:  &lt;label&gt;</h1></header>
+  <section class="content">
+  <pre contenteditable>&lt;form method="POST" action="http://x.y"&gt;
   &lt;fieldset&gt;
     &lt;legend&gt;Radio Buttons are:&lt;/legend&gt;
     &lt;ul&gt;
       &lt;li&gt;
         &lt;input id="rbb1" type="radio" name="buttons" value="important"&gt; 
-        &lt;label for="rbb1"&gt;by default accessible&lt;/label&gt;
+        <b>&lt;label for="rbb1"&gt;by default accessible&lt;/label&gt;</b>
       &lt;/li&gt;
       &lt;li&gt;
-        &lt;input id="rbb2" type="radio" name="buttons" value="useful"&gt; 
-        &lt;label for="rbb2"&gt;super useful&lt;/label&gt;
+        &lt;input <b>id="rbb2"</b> type="radio" name="buttons" value="useful"&gt; 
+        &lt;label <b>for="rbb2"</b>&gt;super useful&lt;/label&gt;
       &lt;/li&gt;
       &lt;li&gt;
-        &lt;input id="rbb3" type="radio" name="buttons" value="required"&gt; 
-        &lt;label for="rbb3"&gt;natively navigable&lt;/label&gt;
+        &lt;input <b>id="rbb3"</b> type="radio" name="buttons" value="required"&gt; 
+        &lt;label <b>for="rbb3"</b>&gt;natively navigable&lt;/label&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/fieldset&gt;
@@ -783,11 +860,31 @@ Based on: https://estelle.github.com/slides
 
 
 
+<div class="slide">
+  <header><h1>Markup:  &lt;label&gt;</h1></header>
+  <section class="content">
+  <pre contenteditable>&lt;input id="rbb1" 
+  type="radio" name="buttons" value="important"&gt; 
+<b>&lt;label for="rbb1"&gt;by default accessible&lt;/label&gt;</b>
+
+&lt;input <b>id="rbb2"</b> 
+  type="radio" name="buttons" value="useful"&gt; 
+&lt;label <b>for="rbb2"</b>&gt;super useful&lt;/label&gt;
+
+&lt;input <b>id="rbb3"</b> 
+  type="radio" name="buttons" value="required"&gt; 
+&lt;label <b>for="rbb3"</b>&gt;natively navigable&lt;/label&gt;</pre>
+  </section>
+</div>
+
+
+
+
 
 <div class="slide">
-  <header><h1>Markup - </h1></header>
+  <header><h1>Markup:  </h1></header>
   <section class="content">
-  <pre contenteditable>&lt;form method="" action=""&gt;
+  <pre contenteditable>&lt;form method="POST" action="otherpage.html"&gt;
   &lt;fieldset&gt;
     &lt;legend&gt;Radio Buttons are:&lt;/legend&gt;
     &lt;ul&gt;
