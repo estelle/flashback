@@ -1,0 +1,120 @@
+
+<style>.editme {
+  text-align: left;
+  font-size: 1.4em;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  text-shadow: none;
+  white-space: pre;
+  border: 1px solid #ccc;
+  font-family: monospace;
+  display: block;
+  margin-bottom: 1em;
+}
+body {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    text-shadow: rgba(0, 0, 0, 0.2) 0 2px 5px;
+    color: #333;
+}
+ul {
+    list-style-type: none; 
+}
+</style>
+
+<body>
+  
+<footer>
+  <fieldset id="languageSelector">
+<legend>Select your country:</legend>
+<ul>
+<li>
+<input type="radio" name="langSelect" id="langAR" value="AR">
+<label for="langAR" class="langAR">Argentina</label>
+</li>
+<li>
+<input type="radio" name="langSelect" id="langAU" value="AU">
+<label for="langAU" class="langAU">Australia</label>
+</li>
+<li>
+<input type="radio" name="langSelect" id="langBR" value="BR">
+<label for="langBR" class="langBR">Brazil</label>
+</li>
+<li>
+<input type="radio" name="langSelect" id="langCA" value="CA">
+<label for="langCA" class="langCA">Canada</label>
+</li>
+<li>
+<input type="radio" name="langSelect" id="langCL" value="CL">
+<label for="langCL" class="langCL">Chile</label>
+</li>
+<li>
+<input type="radio" name="langSelect" id="langCN" value="CN">
+<label for="langCN" class="langCN">China</label>
+</li>
+<li>
+<input type="radio" name="langSelect" id="langCO" value="CO">
+<label for="langCO" class="langCO">Colombia</label>
+</li>
+<li>
+<input type="radio" name="langSelect" id="langHK" value="HK">
+<label for="langHK" class="langHK">Hong Kong</label>
+</li>
+<li>
+<input type="radio" name="langSelect" id="langMY" value="MY">
+<label for="langMY" class="langMY">Malaysia</label>
+</li>
+<li>
+<input type="radio" name="langSelect" id="langMX" value="MX">
+<label for="langMX" class="langMX">Mexico</label>
+</li>
+<li>
+<input type="radio" name="langSelect" id="langNZ" value="NZ">
+<label for="langNZ" class="langNZ">New Zealand</label>
+</li>
+<li>
+<input type="radio" name="langSelect" id="langPE" value="PE">
+<label for="langPE" class="langPE">Peru</label>
+</li>
+<li>
+<input type="radio" name="langSelect" id="langSG" value="SG">
+<label for="langSG" class="langSG">Singapore</label>
+</li>
+<li>
+<input type="radio" name="langSelect" id="langZA" value="ZA">
+<label for="langZA" class="langZA">South Africa</label>
+</li>
+<li>
+<input type="radio" name="langSelect" id="langAE" value="AE">
+<label for="langAE" class="langAE">United Arab Emirates</label>
+</li>
+<li>
+<input type="radio" aria-selected="true" checked="" name="langSelect" id="langUS" value="US">
+<label for="langUS" class="langUS">United States</label>
+</li>
+</ul>
+</fieldset>
+
+</footer>
+
+<style class="editme" contenteditable="">
+footer {
+  height: 168px; /* when open */
+  height: 2em; /* when closed */
+}
+footer fieldset { /* when closed */
+  transform: scale(1,0);
+}
+footer {
+  background-color: rgba(0,0,0,0.6);
+}
+fieldset {
+  width: 215px;
+  padding-right: 7px;
+  box-shadow: inset 0 -15px 20px -20px #000;
+  right: 0px;
+}
+</style>
+
+</body>
