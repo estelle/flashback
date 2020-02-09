@@ -234,7 +234,7 @@ pre {
   background-position: 0 1.8rem;
   background-clip: padding-box;
   background-attachment: local;
-  background-size: 100% 2.8rem;
+  background-size: 100% 2.83rem;
   width: 98%;
   margin: 0 1vw 20px;
   overflow: scroll;
@@ -256,6 +256,10 @@ pre b:hover, pre em:hover {
 }
 pre.allcode {
   height: 90vh;
+}
+
+code {
+  color: #226DAA;
 }
 
 /* OBJECT PAGES */

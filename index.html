@@ -907,12 +907,13 @@ Based on: https://estelle.github.com/slides
   <header><h1>Markup:  &lt;label&gt;</h1></header>
   <section class="content">
   <pre contenteditable>&lt;input <b>id="rbb2"</b> 
-  type="radio" name="buttons" value="useful"&gt; 
-&lt;label <b>for="rbb2"</b>&gt;super useful&lt;/label&gt;
+  type="radio" name="r" value="explicit"&gt; 
+&lt;label <b>for="rbb2"</b>&gt;<i>explicit label</i>&lt;/label&gt;
 
-&lt;input <b>id="rbb3"</b> 
-  type="radio" name="buttons" value="navigable"&gt; 
-&lt;label <b>for="rbb3"</b>&gt;natively navigable&lt;/label&gt;</pre>
+<b>&lt;label&gt;</b>
+  &lt;input type="radio" name="r" value="implicit"&gt; 
+  <i>implicit label</i>
+&lt;/label&gt;</pre>
 <ul>
   <li>Caption for an item in a user interface.</li>
 <li>Explicit or implicit</li>
@@ -989,13 +990,19 @@ Based on: https://estelle.github.com/slides
     <ul>
       <li>Position native input on top of SVG; <small>people <a href="https://motorola-global-en-uk.custhelp.com/app/answers/indevice_detail/a_id/104169/p/30,6720,9299">exploring by touch</a> expect to find input where it should be. via <a href="https://twitter.com/@SaraSoueidan">@SaraSoueidan</a></small></li>
       <li>Style radio button:<br/>
-        <code>-webkit-appearance: none;<br/>
-opacity: 0;<br/>
+        <code>opacity: 0;<br/>
 position: absolute;</code></li>
 
       <li>Style the label with <br><code>input[type="radio"]:checked + label</code></li>
+      <li>Or, use <code>::before</code>/<code>::after</code> with:<br/> <code>-webkit-appearance: none;</code> </li>
     </ul>
   </section>
+</div>
+
+<div class="slide object">
+  <h1>Styles the radio button</h1>
+  <object data="files/uglybutton.html"></object>
+  <a href="files/uglybutton.html" class="pagelink"></a>
 </div>
 
 <div class="slide object">
@@ -1013,11 +1020,117 @@ position: absolute;</code></li>
 </div>
 
 
+
+<div class="slide object">
+  <h1></h1>
+  <object data="assets/site/flashback.html"></object>
+  <a href="assets/site/flashback.html" class="pagelink"></a>
+</div>
+
+<div class="slide">
+  <header><h1></h1></header>
+  <section class="content">
+<pre contenteditable>&lt;form action=&quot;editaddress.html&quot;&gt;
+&lt;fieldset&gt;
+&lt;legend&gt;Select an address to edit:&lt;/legend&gt;
+&lt;div class=&quot;carousel&quot;&gt;
+&lt;span class=&quot;backward&quot; data-move=&quot;backward&quot; data-carousel=&quot;shipping-addresses&quot; hidden aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+&lt;ul class=&quot;shipping-addresses left0&quot;&gt;
+  &lt;li&gt;
+    <b>&lt;label for=&quot;address1&quot;&gt;</b>
+      &lt;p&gt;Estelle Weyl&lt;/p&gt;
+      &lt;p&gt;The Stubborn Mule&lt;/p&gt;
+      &lt;p&gt;100 South Eola Drive&lt;/p&gt;
+      &lt;p&gt;Orlando, FL 32801&lt;/p&gt;
+    <b>&lt;/label&gt;</b>
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;label for=&quot;address2&quot;&gt;
+      &lt;p&gt;Elizabeth Warren&lt;/p&gt;
+      &lt;p&gt;1600 Pennsylvania Avenue NW&lt;/p&gt;
+      &lt;p&gt;Washington DC 20500&lt;/p&gt;
+      &lt;p&gt;202-456-1111&lt;/p&gt;
+    &lt;/label&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;label for=&quot;address3&quot;&gt;
+      &lt;p&gt;Tom Steyer&lt;/p&gt;
+      &lt;p&gt;1600 Pennsylvania Avenue NW&lt;/p&gt;
+      &lt;p&gt;Washington DC 20500&lt;/p&gt;
+      &lt;p&gt;202-456-1111&lt;/p&gt;
+    &lt;/label&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;label for=&quot;address4&quot;&gt;
+      &lt;p&gt;Bernie Sanders&lt;/p&gt;
+      &lt;p&gt;1600 Pennsylvania Avenue NW&lt;/p&gt;
+      &lt;p&gt;Washington DC 20500&lt;/p&gt;
+      &lt;p&gt;202-456-1111&lt;/p&gt;
+    &lt;/label&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;label for=&quot;address5&quot;&gt;
+      &lt;p&gt;Amy Klobuchar&lt;/p&gt;
+      &lt;p&gt;1600 Pennsylvania Avenue NW&lt;/p&gt;
+      &lt;p&gt;Washington DC 20500&lt;/p&gt;
+      &lt;p&gt;202-456-1111&lt;/p&gt;
+    &lt;/label&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;label for=&quot;address6&quot;&gt;
+      &lt;p&gt;Nancy Pelosi&lt;/p&gt;
+      &lt;p&gt;1600 Pennsylvania Avenue NW&lt;/p&gt;
+      &lt;p&gt;Washington DC 20500&lt;/p&gt;
+      &lt;p&gt;202-456-1111&lt;/p&gt;
+    &lt;/label&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;span class=&quot;forward&quot; data-move=&quot;forward&quot; data-carousel=&quot;shipping-addresses&quot; hidden aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;ul id=&quot;addressradios&quot; class=&quot;carousel-radios&quot;&gt;
+  &lt;li&gt;
+    <b>&lt;input type=&quot;radio&quot; name=&quot;shipping-addresses&quot; value=&quot;0&quot; id=&quot;address1&quot; checked&gt;&lt;span&gt;&lt;/span&gt;</b>
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;shipping-addresses&quot; value=&quot;1&quot; id=&quot;address2&quot;&gt;&lt;span&gt;&lt;/span&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;shipping-addresses&quot; value=&quot;2&quot; id=&quot;address3&quot;&gt;&lt;span&gt;&lt;/span&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;shipping-addresses&quot; value=&quot;3&quot; id=&quot;address4&quot;&gt;&lt;span&gt;&lt;/span&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;shipping-addresses&quot; value=&quot;4&quot; id=&quot;address5&quot;&gt;&lt;span&gt;&lt;/span&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;shipping-addresses&quot; value=&quot;5&quot; id=&quot;address6&quot;&gt;&lt;span&gt;&lt;/span&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/fieldset&gt;
+&lt;div class=&quot;buttons&quot;&gt;
+  &lt;input type=&quot;submit&quot; class=&quot;btn button-link&quot; value=&quot;Edit&quot;&gt;
+  &lt;a href=&quot;addaddress.html&quot; class=&quot;btn button-link&quot;&gt;Add&lt;span class=&quot;a11y&quot;&gt; a new address&lt;/span&gt;&lt;/a&gt;
+&lt;/div&gt; 
+&lt;/form&gt;</pre>    
+  </section>
+</div>
+
+<div class="slide intro">
+  <h1><span><strong>Code</strong></span></h1>
+</div>
+
+
 <div class="slide object" style="background-color: black;">
   <h1></h1>
   <object data="assets/site/index.html" style="height:calc(100vh - 60px)"></object>
   <a href="assets/site/index.html" class="pagelink">Country Selector</a>
 </div>
+
+<div class="slide intro">
+  <h1><span><strong>CODE</strong></span></h1>
+  </div>
+
 
 
 <div class="slide">
@@ -1094,6 +1207,7 @@ position: absolute;</code></li>
 &lt;/fieldset&gt;</pre>  
   </section>
 </div>
+
 
 
 <div class="slide object">

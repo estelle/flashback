@@ -1,0 +1,55 @@
+
+<style>.editme {
+  text-align: left;
+  font-size: 1.4em;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  text-shadow: none;
+  white-space: pre;
+  border: 1px solid #ccc;
+  font-family: monospace;
+  display: block;
+  margin-bottom: 1em;
+}
+body {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    text-shadow: rgba(0, 0, 0, 0.2) 0 2px 5px;
+    color: #333;
+}
+ul {
+    list-style-type: none; 
+}
+</style>
+
+<body>
+  
+  <fieldset>
+    <legend>Radio Buttons :</legend>
+        <ul>
+          <li><input id="rb1" type="radio" name="a11y2" value="accessible" required> <label for="rb1"></label> </li>
+          <li><input id="rb2" type="radio" name="a11y2" value="useful"> <label for="rb2"></label></li>
+          <li><input id="rb4" type="radio" name="a11y2" value="supported"> <label for="rb3"></label></li>
+          <li><input id="rb5" type="radio" name="a11y2" value="semantic"> <label for="rb4"></label></li>
+  </ul></fieldset>
+
+  <style class="editme" contenteditable>input[type=radio]{ 
+    -webkit-appearance: none;
+  }
+input[type=radio] {
+  content: '';
+  display: inline-block;
+  border: 2px solid green;
+  height: 2em;
+  width: 5em;
+}
+label::before {
+  content: " pick me";
+}
+:checked + label::before {
+  content: " I was picked!!!";
+  color: red;
+}</style>
+
+</body>

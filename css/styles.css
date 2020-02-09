@@ -113,7 +113,7 @@ a {
   display: inline-block;
   text-decoration: none;
   line-height: 110%;
-  color: darkgreen;
+  color: #9b6e9b;
 }
 
 a:hover {
@@ -148,7 +148,7 @@ button {
   margin-top: 200px;
 }
 .slide.intro header h1 {
-  color: darkgreen;
+  color: #9b6e9b;
   padding: 40px 0;
   letter-spacing: 0.25px;
 }
@@ -203,7 +203,7 @@ pre {
   background-position: 0 1.8rem;
   background-clip: padding-box;
   background-attachment: local;
-  background-size: 100% 2.8rem;
+  background-size: 100% 2.83rem;
   width: 98%;
   margin: 0 1vw 20px;
   overflow: scroll;
@@ -215,16 +215,20 @@ pre {
 pre b, pre em {
   font-weight: normal;
   font-style: normal;
-  color: darkgreen;
+  color: #9b6e9b;
   font-weight: bold;
   transition: 200ms;
 }
 pre b:hover, pre em:hover {
-  color: #ff9bff;
-  background: darkgreen;
+  color: #649164;
+  background: #9b6e9b;
 }
 pre.allcode {
   height: 90vh;
+}
+
+code {
+  color: #9b6e9b;
 }
 
 a.pagelink {
@@ -232,7 +236,7 @@ a.pagelink {
   top: 5px;
   right: 5px;
   color: #FFF;
-  background-color: darkgreen;
+  background-color: #9b6e9b;
   padding: 3px 5px 3px 5px;
   border: none;
   color: #ffffff;
@@ -248,7 +252,7 @@ a.pagelink::after {
   list-style-type: none;
 }
 .picksome span {
-  color: darkgreen;
+  color: #9b6e9b;
   float: right;
 }
 .picksome [type=checkbox]:not(:checked) + label span {
@@ -257,7 +261,7 @@ a.pagelink::after {
 
 .intro > h1 {
   font-size: 3rem;
-  color: darkgreen;
+  color: #9b6e9b;
   display: flex;
   height: 100vh;
   align-items: center;
@@ -276,7 +280,7 @@ a.pagelink::after {
 }
 
 b, dt {
-  color: darkgreen;
+  color: #9b6e9b;
   font-weight: bold;
 }
 
@@ -287,7 +291,7 @@ b, dt {
   color: white;
 }
 .blind a {
-  color: darkgreen;
+  color: #9b6e9b;
   background-color: white;
   text-decoration: underline;
   font-size: 0.875rem;
@@ -310,7 +314,7 @@ b, dt {
 }
 .svg svg {
   width: 20vw;
-  fill: darkgreen;
+  fill: #9b6e9b;
 }
 .svg ul {
   display: flex;
@@ -333,7 +337,7 @@ b, dt {
 .graph .arrow div.border {
   padding: 0;
   flex: 1 0;
-  border-bottom: 10px solid darkgreen;
+  border-bottom: 10px solid #9b6e9b;
   position: relative;
   text-align: center;
   top: -10px;
@@ -346,10 +350,10 @@ b, dt {
   height: 0;
   width: 0;
   border: 10px solid;
-  border-color: transparent transparent transparent darkgreen;
+  border-color: transparent transparent transparent #9b6e9b;
 }
 .graph .arrow div.border:before {
-  border-color: transparent darkgreen transparent transparent;
+  border-color: transparent #9b6e9b transparent transparent;
   right: auto;
   left: -20px;
 }
