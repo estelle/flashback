@@ -26,20 +26,24 @@ ul {
 <body>
   <form>
   <fieldset>
-    <legend>Radio Buttons :</legend>
-        <ul>
-          <li><input id="rb1" type="radio" name="a11y2" value="accessible" required> <label for="rb1"></label> </li>
-          <li><input id="rb2" type="radio" name="a11y2" value="useful"> <label for="rb2"></label></li>
-          <li><input id="rb3" type="radio" name="a11y2" value="supported"> <label for="rb3"></label></li>
-          <li><input id="rb4" type="radio" name="a11y2" value="semantic"> <label for="rb4"></label></li>
-  </ul></fieldset>
+    <legend>Rate your experience:</legend>
+     <rating>
+       <input type="radio" name="rating" value="1" aria-label="1 star" required/>
+       <input type="radio" name="rating" value="2" aria-label="2 stars"/>
+       <input type="radio" name="rating" value="3" aria-label="3 stars"/>
+       <input type="radio" name="rating" value="4" aria-label="4 stars"/>
+       <input type="radio" name="rating" value="5" aria-label="5 stars"/>
+     </rating>
+    </fieldset>
   <input type="reset">
+  <input type="submit">
 </form>
-  <style class="editme" contenteditable>input[type=radio]{ 
+  <style class="editme" contenteditable>
+input[type=radio]{ 
   -webkit-appearance: none;
 }
 input[type=radio] {
-  content: '';
+  content: '\2605';
   display: inline-block;
   border: 2px solid green;
   height: 2em;

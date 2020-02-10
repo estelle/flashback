@@ -1,0 +1,17 @@
+style.editme {
+  padding: 10px 20px;
+  border-radius: 8px;
+  background-image: linear-gradient(to top, #eee 50%, #FFF 50%);
+  background-position: 0 20px;
+  background-clip: padding-box;
+  background-attachment: local;
+  background-size: 100% 4.35rem;
+  width: 98%;
+  margin: 0 20px 20px;
+  overflow: scroll;
+  box-sizing: border-box;
+  padding-top: 20px;
+  border: 1px solid;
+}
+
+/*# sourceMappingURL=editme.css.map */
