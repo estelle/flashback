@@ -274,7 +274,7 @@ Based on: https://estelle.github.com/slides
   <h1>Hearing impaired experience</h1>
   
   <object data="http://popular-vines.com/miss-piggy-finds-kermit-the-frog-on-tinder/"></object>
-  <a href="https://vine.co/v/eaKw7953pij/embed/simple" class="pagelink">Vine</a>
+  <a href="http://popular-vines.com/miss-piggy-finds-kermit-the-frog-on-tinder/" class="pagelink">Vine</a>
   </div>
   
 
@@ -867,10 +867,12 @@ Based on: https://estelle.github.com/slides
 &lt;input id="rbb3" 
   type="radio" <b>name</b>=<b></b>"buttons" <b>value</b>="navigable"&gt;</pre>
 
-  <ul><li>An INPUT element with `TYPE=RADIO' represents a boolean choice.</li>
-    <li>A set of such elements with the same name represents a 1-of-many choice field. </li>
-    <li>The NAME and VALUE attributes are required as for check boxes. </li>
+  <ul><li>INPUT element with `TYPE=RADIO' represents a boolean choice.</li>
+    <li>A set with the same NAME creates a 1-of-many choice field. </li>
+    <li>The NAME and VALUE attributes are required. </li>
     <li>The name and value of the CHECKED radio button will be sent with the form.</li>
+    <li>REQUIRED on any means one is required.</li>
+    <li>:required only matches those with the attribute set.</li>
     </ul>
   </p>  </section>
 </div>
@@ -951,7 +953,7 @@ Based on: https://estelle.github.com/slides
 <ul>
   <li>Caption for an item in a user interface.</li>
 <li>Explicit or implicit</li>
-<li>No other form control, buttons, or link</li>
+<li>Can't contain other form controls, buttons, or link</li>
 <li>Don't use with buttons</li>
 </ul>
 <small>If a form, or a section of a form needs a title, use the &lt;legend> element placed within a &lt;fieldset>.</small>  </section>
@@ -1162,8 +1164,8 @@ position: absolute;</code></li>
 </div>
 
 <div class="slide intro">
-  <h1><span><strong>CODE</strong></span></h1>
-  </div>
+  <h1><span><strong>Code</strong></span></h1>
+</div>
 
 
 
@@ -1251,11 +1253,11 @@ position: absolute;</code></li>
 
 
 <div class="slide intro">
-  <header><h1>Code</h1></header>
+  <h1><span><strong>Code</strong></span></h1>
 </div>
 
 <div class="slide intro">
-  <header><h1>These all have issues</h1></header>
+<h1><span><strong>These all have issues<span><strong></h1></header>
 </div>
 
 <div class="slide object">
